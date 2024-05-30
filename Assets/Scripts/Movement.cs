@@ -13,6 +13,13 @@ public class Movement : MonoBehaviour
    public LayerMask solidObjectLayer;
    public LayerMask interactablesLayer;
 
+   private Animator animator;
+
+   private void Awake()
+   {
+        animator = GetComponent<Animator>();
+   }
+
     private void Update()
     {
         if (!isMoving)
@@ -22,6 +29,9 @@ public class Movement : MonoBehaviour
 
             if (input != Vector2.zero)
             {
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
+
                 var targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
@@ -34,6 +44,8 @@ public class Movement : MonoBehaviour
                 
             }
         }
+
+        animator.SetBool("isMoving",isMoving);
     }
 
     IEnumerator Move(Vector3 targetPos)
