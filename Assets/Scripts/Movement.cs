@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
 
    public Vector2 input; 
 
+   public LayerMask solidObjectLayer;
+
     private void Update()
     {
         if (!isMoving)
@@ -23,7 +25,12 @@ public class Movement : MonoBehaviour
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
-                StartCoroutine(Move(targetPos));
+                if (isWalkable(targetPos)) 
+                {
+                    StartCoroutine(Move(targetPos));
+
+                }
+                
             }
         }
     }
@@ -36,10 +43,17 @@ public class Movement : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
+        isMoving = false;
         transform.position = targetPos;
 
-        isMoving = false;
+    }
+
+    private bool isWalkable(Vector3 targetPos) {
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer) != null)
+        {
+            return false;
+        }
+        return true;
     }
 }
-﻿
 
