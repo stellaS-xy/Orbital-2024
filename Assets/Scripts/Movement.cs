@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
    public Vector2 input; 
 
    public LayerMask solidObjectLayer;
+   public LayerMask interactablesLayer;
 
     private void Update()
     {
@@ -49,7 +50,7 @@ public class Movement : MonoBehaviour
     }
 
     private bool isWalkable(Vector3 targetPos) {
-        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer) != null)
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer | interactablesLayer) != null)
         {
             return false;
         }
