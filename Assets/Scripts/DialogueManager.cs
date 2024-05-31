@@ -16,6 +16,9 @@ public class DialogueManager: MonoBehaviour
 
     public static DialogueManager Instance { get; private set; }
 
+    public bool isScrolling;
+
+    [SerializeField] private float textSpeed;
     private void Awake()
     {
         if (Instance == null)
@@ -41,10 +44,16 @@ public class DialogueManager: MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
-                ++currentLine;
+                if (isScrolling ==false)
+                {
+                    ++currentLine;
                 if(currentLine < dialogueLines.Length)
                 {
-                     dialogueText.text = dialogueLines[currentLine];
+                    CheckName();
+                    //dialogueText.text = dialogueLines[currentLine];
+                    StartCoroutine(ScrollingText());
+
+                     
                 }
                 else
                 {
@@ -52,13 +61,16 @@ public class DialogueManager: MonoBehaviour
                     nameBox.SetActive(false); //Hide the Name Box when the dialogue is done
                 }
 
+                }
+                
+
             }
            
         }
 
     }
 
-    public IEnumerator ShowDialogue(string[] _newLines) 
+    public IEnumerator ShowDialogue(string[] _newLines, bool hasName) 
     {
         Debug.Log("ShowDialogue has been actived");
         yield return new WaitForEndOfFrame();
@@ -66,9 +78,14 @@ public class DialogueManager: MonoBehaviour
  
         dialogueLines = _newLines;
         currentLine = 0;
-        dialogueText.text = dialogueLines[currentLine];
+
+        CheckName();
+
+        //dialogueText.text = dialogueLines[currentLine];
+        StartCoroutine(ScrollingText());
+
         dialogueBox.SetActive(true);
-        nameBox.SetActive(true);
+        nameBox.SetActive(hasName);
         
         Debug.Log("ShowDialogue is done");
 
@@ -77,6 +94,29 @@ public class DialogueManager: MonoBehaviour
     public bool IsDialogueBoxActive()
     {
         return dialogueBox.activeInHierarchy;
+    }
+
+    private void CheckName()
+    {
+        if(dialogueLines[currentLine].StartsWith("n-"))
+        {
+            nameText.text = dialogueLines[currentLine].Replace("n-","");
+            currentLine++;
+
+        }
+    }
+
+    private IEnumerator ScrollingText() 
+    {
+        isScrolling = true;
+        dialogueText.text = "";
+
+        foreach(char letter in dialogueLines[currentLine].ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(textSpeed);
+        }
+        isScrolling = false;
     }
 }
 
