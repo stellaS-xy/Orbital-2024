@@ -8,7 +8,10 @@ public class DialogueManager: MonoBehaviour
 { 
     [SerializeField] GameObject dialogueBox, nameBox; //Display or Hide
     [SerializeField] Text dialogueText, nameText;
-    [SerializeField] Image image;
+    [SerializeField] Image faceImage;
+
+    [Header("Face Image")]
+    public Sprite face01, face02;
 
     [TextArea(1,3)]
     public string[] dialogueLines;
@@ -101,7 +104,18 @@ public class DialogueManager: MonoBehaviour
         if(dialogueLines[currentLine].StartsWith("n-"))
         {
             nameText.text = dialogueLines[currentLine].Replace("n-","");
+            
+            if (dialogueLines[currentLine] == "n-Sammy")
+            {
+                faceImage.sprite = face01;
+            }
+            else
+            {
+                faceImage.sprite = face02;
+            }
             currentLine++;
+
+
 
         }
     }

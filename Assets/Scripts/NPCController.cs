@@ -20,7 +20,7 @@ public class NPCController : MonoBehaviour
     [TextArea(1,3)]
     public string[] lines;
     [SerializeField] public bool hasName;
-    public Image image;
+    public Sprite faceImage;
 
 
 public void Interact() 
