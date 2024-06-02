@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
             var npc = collider.GetComponent<NPCController>();
             if (npc != null)
             {
+                npc.showButton();
                 npc.Interact();
             }
         }

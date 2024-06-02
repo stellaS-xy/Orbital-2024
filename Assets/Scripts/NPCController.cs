@@ -22,11 +22,19 @@ public class NPCController : MonoBehaviour
     [SerializeField] public bool hasName;
     public Sprite faceImage;
 
+    public GameObject TalkButton;
+
 
 public void Interact() 
     {
         Debug.Log("NPC has interacted");
+        TalkButton.SetActive(false);
         StartCoroutine(DialogueManager.Instance.ShowDialogue(lines, hasName));
+    }
+
+public void showButton()
+    {
+        TalkButton.SetActive(true);
     }
 
 }

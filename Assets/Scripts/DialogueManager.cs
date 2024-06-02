@@ -6,8 +6,8 @@ using System;
 
 public class DialogueManager: MonoBehaviour
 { 
-    [SerializeField] GameObject dialogueBox, nameBox; //Display or Hide
-    [SerializeField] Text dialogueText, nameText;
+    [SerializeField] GameObject dialogueBox, nameBox, instructionBox; //Display or Hide
+    [SerializeField] Text dialogueText, nameText, instructionText;
     [SerializeField] Image faceImage;
 
     [Header("Face Image")]
@@ -24,21 +24,14 @@ public class DialogueManager: MonoBehaviour
     [SerializeField] private float textSpeed;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
+        Instance = this;
     }
     private void Start() 
     {
         dialogueText.text = ""; // Ensure the dialogue text is empty initially
         dialogueBox.SetActive(false); // Ensure the dialogue box is hidden initially
         nameBox.SetActive(false); // Ensure the name box is hidden initially
+        
     }
 
     public void HandleUpdate()
@@ -89,6 +82,7 @@ public class DialogueManager: MonoBehaviour
 
         dialogueBox.SetActive(true);
         nameBox.SetActive(hasName);
+        instructionBox.SetActive(false);
         
         Debug.Log("ShowDialogue is done");
 
@@ -113,6 +107,7 @@ public class DialogueManager: MonoBehaviour
             {
                 faceImage.sprite = face02;
             }
+
             currentLine++;
 
 
