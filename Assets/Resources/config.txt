@@ -1,0 +1,34 @@
+{
+    "AnimalList":[
+    "Rabbit", "Bear", "Pig", "Monkey", "Lion", "Panda", "Deer", "Fox"
+]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
