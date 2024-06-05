@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum GameState { FreeRoam, Dialogue, PuzzleSolving }
 
 public class GameController : MonoBehaviour
 { 
     [SerializeField] PlayerController playerController;
+    [SerializeField] Button button;
 
     GameState state;
 
@@ -50,6 +52,8 @@ public class GameController : MonoBehaviour
                 state = GameState.FreeRoam;
             }
         }
+
+        
     }
 }
 
