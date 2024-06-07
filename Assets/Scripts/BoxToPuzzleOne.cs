@@ -13,18 +13,14 @@ public class BoxToPuzzleOne : MonoBehaviour
     public GameObject rabbit;
     public GameObject canvas;
     public GameObject grid;
+    public GameObject screenImage;
 
     public Animator animator;
 
     private void Start()
     {
-        GameObject.DontDestroyOnLoad(this.gameObject);
-        GameObject.DontDestroyOnLoad(this.eventObj);
-        GameObject.DontDestroyOnLoad(this.gameController);
-        GameObject.DontDestroyOnLoad(this.bear);
-        GameObject.DontDestroyOnLoad(this.rabbit);
         GameObject.DontDestroyOnLoad(this.canvas);
-        GameObject.DontDestroyOnLoad(this.grid);
+       
     }
 
 
@@ -54,10 +50,15 @@ public class BoxToPuzzleOne : MonoBehaviour
 
     public IEnumerator LoadScene()
     {
-        animator.SetBool("FadeIn", true);
-        animator.SetBool("FadeOut", false);
+        
+        Debug.Log("faded out");
+        animator.SetBool("FadeIn", false);
+        animator.SetBool("FadeOut", true);
+        
 
-        yield return new WaitForSeconds(1);
+
+        yield return new WaitForSeconds(2);
+        
 
         AsyncOperation async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         async.completed += OnLoadedScene;
@@ -65,8 +66,12 @@ public class BoxToPuzzleOne : MonoBehaviour
 
     private void OnLoadedScene(AsyncOperation obj)
     {
-        animator.SetBool("FadeIn", false);
-        animator.SetBool("FadeOut", true);
+        
+        Debug.Log("Animator: FadeIn set to true");
+
+        animator.SetBool("FadeIn", true);
+        animator.SetBool("FadeOut", false);
+
 
     }
 
