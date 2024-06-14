@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 class AnimalConfig
 {
@@ -13,7 +14,7 @@ public class CardManager : MonoBehaviour
     GameObject _originCard;
     int row = 4;
     int col = 4;
-    float _cardH = 2;
+    float _cardH = 1.5f;
     float _spaceX = 0.5f;
     float _spaceY = 0.5f;
     public static CardManager Instance;
@@ -88,7 +89,7 @@ public class CardManager : MonoBehaviour
     {
         if (_gameover)
         {
-            return;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
 

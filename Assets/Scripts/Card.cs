@@ -89,12 +89,12 @@ public class Card : MonoBehaviour
 
         if (toFront)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.2f);
             CardManager.Instance.CompareCards(this);
         }
         else
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
             CardManager.Instance.Clear();
         }
 
