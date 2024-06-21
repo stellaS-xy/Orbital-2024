@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6105429497348458962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2161793260304743631}
+  - component: {fileID: 4344513689595618668}
+  - component: {fileID: 3019932067046428544}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2161793260304743631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6105429497348458962}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 390.86804, y: 175.0874, z: -2.2551422}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4344513689595618668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6105429497348458962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66249264e74eb42949167c43b55a42a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  button: {fileID: 0}
+--- !u!114 &3019932067046428544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6105429497348458962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709af17c59da748cd9fef39d2c7b57bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  nameBox: {fileID: 0}
+  instructionBox: {fileID: 0}
+  dialogueText: {fileID: 0}
+  nameText: {fileID: 0}
+  instructionText: {fileID: 0}
+  faceImage: {fileID: 0}
+  face01: {fileID: 21300000, guid: 72cbfb2431ee6472d8681e2bd4a4a565, type: 3}
+  face02: {fileID: 21300000, guid: bfd96fa77953d4edd93b8a0b8ee90266, type: 3}
+  dialogueLines:
+  - n-Truth
+  - "Someone is over there\u2026Oh, thats Sammy, he is early as what i expected.."
+  - n-Sammy
+  - " \u201CHey Truth! Happy Birthday my dear friend! But where are you going? I
+    thought your birthday party is starting soon?\u201D\n"
+  - n-Truth
+  - "\"Thanks, Sammy! I'm off to Finn's place. That little rascal swiped my birthday
+    cake! \n\n"
+  - Have you seen him this morning? I just hope my party doesn't start late because
+    of him."
+  - n-Sammy
+  - "\u201CWait, are you sure? I was actually with Finn all morning. We just separated
+    a few minutes ago"
+  - ' because he forgot his jacket at home and rushed back to get it. I don''t think
+    he could have stolen your cake at that time. Why do you think it was him?"
+
+'
+  - n-Truth
+  - "\u201CHuh? Really? But I found his fur in my fridge. If Finn didn't take my
+    cake, then who did?\"\n"
+  - n-Sammy
+  - "\"Interesting\u2026 Seems like someone is playing a prank on us. "
+  - 'How about we go find Finn and see what he has to say?"
+
+'
+  - "\"Oh, by the way, something strange happened with Finn this morning. \n"
+  - n-Truth
+  - '"Sure, let''s see what he''s up to this time."
+
+'
+  currentLine: 0
+  isScrolling: 0
+  textSpeed: 0.05

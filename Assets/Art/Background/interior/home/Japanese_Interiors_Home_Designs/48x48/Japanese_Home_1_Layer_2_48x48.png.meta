@@ -1,0 +1,2877 @@
+fileFormatVersion: 2
+guid: b3f9fea898faf4fd7a5ab11ccc11ce25
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebecb14bcd3664bf49f8cd6a6e79894f
+      internalID: -1727356024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6a2ed8b6fb34a76a581ad467e4b381
+      internalID: -891217869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a5225356ba245e29b3e0a606be4c90
+      internalID: 485412886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947723be7ea5246d6939163f9ddb4d21
+      internalID: 1382826197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497db78a56a01489cb93a413ca40cecb
+      internalID: 1038871601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a1ce8c41e3a4c98bbe2d386da53b48
+      internalID: -774090690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d001cdf37fc406ca4eea1c97a1b0a8
+      internalID: -1647822984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004a81bf481584c9f92adcbb7d85def5
+      internalID: -335708808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_8
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdc054f691e74d3087592f332e1e084
+      internalID: -144982197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_9
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db131e037d0f14c69a430ad5a1819bf1
+      internalID: 1853885129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238ca2ad8bfbf4c078012fd17480f389
+      internalID: -1473532050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_11
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 594
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79af136f36ac4c5a899d88e634f7977
+      internalID: 848565474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf9fe9c8ecc14d8eb76af84ccba51ca
+      internalID: 49742033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030f626be01264cc480daec7ee235d9d
+      internalID: -2146903404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c058665527c483f92b1433ecb5239a
+      internalID: 1991726611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d68cbc5f5c9411f96e37cba80e2726
+      internalID: 1791424662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f9c1e0fe35f4670a1be116b2de1ad6
+      internalID: 837935091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ce78d42217c46d1ab6acb3e2be396d
+      internalID: 1547634684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13491d98a38094bd6b63fe91bfe2658e
+      internalID: 237454386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdedf2ed0d86341db8b91335235fb8ca
+      internalID: -452379302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11200ed8740954c56a191e15db681ef3
+      internalID: -1334082087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0329e11f91f44f484a1066e90dac97
+      internalID: 48941129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f6d200c3fce49088724796b15a6f4b
+      internalID: 490747377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b88737f7a934efeab0b09b8f3b0936
+      internalID: 536408515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_24
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d191795546294be1b8ad76fa246ad3f
+      internalID: -1105516389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc0917be551744b3a97865a5622ae75
+      internalID: 784173868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88e3c3acfaff49dbb86f7eb6c69ea2e
+      internalID: 2108495871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 546
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eefae3accd3a42a89d7536221c7be58
+      internalID: -1847391153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_28
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a386b6d899c3f42e783f7fb1755c1c5b
+      internalID: 371322655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31362c03698b4627bba302c61bde0a5
+      internalID: 312936308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f2c1c9673f542dea1f0a2a1c6b0791
+      internalID: 1462776277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a16a4d7c404a4dbf94666b491a5a2fd
+      internalID: 125835254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1e58976982c42a1a2ed2b9716dd726
+      internalID: -1977734857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fa5454141e4419ba65eb09b0aa9b27
+      internalID: -901588738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9058d907b2cb04793a4f0e32f2415bcf
+      internalID: -358034162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a450ec4051854cf0b037a1a0d15d4cd
+      internalID: 1812125560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe0ab762c5bc43c790bb108788d1fbf
+      internalID: -1599996502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c681b4bae444d90837b22b19548aad
+      internalID: 542621998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62572caebca714ee39fc91e9184cb15b
+      internalID: 565082315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecaf714ce088426ab156df6d93ec10c
+      internalID: -1496289750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_40
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93feb1678460b4591b4a4b6e2ceebeb6
+      internalID: 169558746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_41
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 498
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9052dd394db450a878cacd4f967081
+      internalID: 1620481136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ada7982c7d04928ab57d7472f4e199
+      internalID: -892515924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fd90d7b0f61469b901f88cc7226e38
+      internalID: -612741556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d762718bb9f34d1383682f156d6098a
+      internalID: 1233176300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5b7787d690346f1ba4125ca319a823
+      internalID: 1208013671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c32d468459e4f4c80240632c42c9b8
+      internalID: -974768806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c099faf4ad31d4337aab159301f89756
+      internalID: 1457217157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c28862ac18124254b263f5697691115
+      internalID: -1232178288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc1046b44b51453288eb23f91baae79
+      internalID: 1235079846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe54e7740197244808201f3847de1458
+      internalID: -1366959649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_51
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 450
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9e20a51c607412db4feeba62a2ddca
+      internalID: -2110702064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_52
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d71823d9e28843d291869325e1192ac
+      internalID: 1842919854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e93f61a870504b93837567670660bf3
+      internalID: 1049432912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f17b51e490a478e951dc66a2a74de1
+      internalID: -761695306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4656bb9ca57a4f4dbaed44f762a1e7f
+      internalID: -443609656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_56
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc476d7cf881f4423a4750831b022fe4
+      internalID: -1320107594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_57
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b824bc06484c54c11a35cff170208c12
+      internalID: 128559313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b3bd24478654f3d9de5b0ce91b036e
+      internalID: -1730430004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_59
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bf632936255419c8c25d0406873dfc
+      internalID: 1171878816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_60
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b3111e504c145ca9a931b8fc7a30bc
+      internalID: -1272691403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_61
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19925f0100ac140b9ac6389bdd3e97d0
+      internalID: -24323571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_62
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbed1e9d8dbf425fbd72417ef9c379d
+      internalID: 938187320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_63
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b895bda8606b47f1a8ee9181bc9d0ee
+      internalID: 589471961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_64
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 402
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca38d75e6a64e968de86a921134c0e
+      internalID: 65327709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_65
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bf28f6cce34420ea5e42d2ed877e9e
+      internalID: -1646888201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60484388968734524a02bb478d0824ff
+      internalID: 1586057739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cfbeb49a62b48cebb908694a88f249
+      internalID: -2138362945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f2683193c4249649287d53e2bbc215
+      internalID: -1935133262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423c914aa03284aa685ecbe88c65074e
+      internalID: -2141455608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_70
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4378ae1597f6462aabd99f8d99fa2b6
+      internalID: 1137909332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_71
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63375aa35f66446a827b01b75c22d03
+      internalID: 1694711065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f09397023e544dcbf9866d0260f04d
+      internalID: 191271588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_73
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e141562c0ac34dc3aee7b8742ce1fa2
+      internalID: 1013454109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51050a6ca179401da0e86c9d9aa4ad9
+      internalID: -409959918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_75
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b866ac589b94a178ef26dd629bd67a
+      internalID: 1378653523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_76
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e1dfa0a9638412ca5b2bc7762b772f
+      internalID: -1147453009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_77
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73f0e75f6efd410cac08b241b8c7723
+      internalID: -1665229093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_78
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6addd57996c82492e8a4489160828e07
+      internalID: 1334261207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_79
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2de1020b115d43eaa4535794c2de9b7
+      internalID: -506802492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_80
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1cc46ac8a8249f8bed138afa4f4bbb
+      internalID: 1650252460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_81
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb06d1e5950544cb8805abe55799d92
+      internalID: -302583807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_82
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2935d521fd6fd4faaa49b31b9881c652
+      internalID: 475698262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_83
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd973fd5fab964d66bac3255383626ed
+      internalID: 81415947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_84
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0279dd5bac32c44108e7342d07076ed7
+      internalID: 285197066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_85
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1e90e27b751428fbea33b34b310385
+      internalID: -1396735389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_86
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e0b1cb5114342d6a5292ec08b04bb9
+      internalID: 1076844089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_87
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 306
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bba8cc8f7e564f07af59337a5a616d6
+      internalID: -1151183491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_88
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6813496de6d644e7ea800f6cec60788b
+      internalID: -87809032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_89
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56a96600ac4f4f3cb148799cb2b430f
+      internalID: 1603565395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b568efe68ff53459982e6daf02dbd48c
+      internalID: -295923414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_91
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aeb554e2a3ba4a46b9da0fb18f4b6c0
+      internalID: 1444381528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_92
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862916c283c5a4b24afe7cf6ebfaef1b
+      internalID: 599786938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_93
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3916fe853d0d64d4f8ad78d2311916f9
+      internalID: -1629812980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_94
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36fe113b5e12488eae7cca49c18eee1
+      internalID: 2131305270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_95
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90507d93635946569646cef0c170e84
+      internalID: 1033245871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_96
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184ae675d04e94f70a9397c39f6e5c15
+      internalID: 663634905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_97
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dba6f33808154ffab2ed949480a1e4b
+      internalID: 47504682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_98
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7cbc7d5abf34874a0230c7fa707f46
+      internalID: 1349053898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_99
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98e06cda8c7a4e1ba7545a563a4b081
+      internalID: 1888845434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_100
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 258
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faebe377eb99e4015a250fbcef3581db
+      internalID: -1232226158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_101
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5667069e7b95542b088403ccd4d8d1fd
+      internalID: -303444149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e3225084fcc47adaefe7a73eafd1a4
+      internalID: -200251043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_103
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947b9b010850e481c817111a1f228058
+      internalID: -1040983960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_104
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b318a0b3858574a87b2bf9f0d947dfbc
+      internalID: 1272362689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_105
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941fbcd3de175473cb7b032922fe0cbe
+      internalID: 766928982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_106
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afd36260d1d048b7a9fcf151bf78a86
+      internalID: 556753072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_107
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c12bba654704dae9f85b2618570f4a
+      internalID: -1061335188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_108
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96806af8fe147462391d78202c690cc7
+      internalID: 542617007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_109
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859de6187b4fa43e6a9c93cc8f425d1e
+      internalID: 1020544537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_110
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8893ae857be4930aa648606d984746
+      internalID: -1928748076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_111
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de36c6d87a7c4d0fa8973ac4a6b4cff
+      internalID: 302475847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_112
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 210
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3c477f8c2224a0faf354f9d43cdfa1
+      internalID: -357608499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 162
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ca5c9f5f3eb48d58e7dd79f85d2783
+      internalID: 245556227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_114
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 162
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee03fe59c87a24a1da14963d729d93db
+      internalID: 933659860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_115
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 162
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938fb25b4ff2f41398ac4ba0d1d6bbdd
+      internalID: -2125903271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_116
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 162
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cd7013c9a894ba0bd29723ee8897a0
+      internalID: 195934013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_117
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 162
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b654d308c5ab4133bd6e9545fa3cb76
+      internalID: -1923710265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_118
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 162
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeabbc1674b6f477da5677922403aede
+      internalID: -304645582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_119
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 66
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20377930ccb74184b369151bbd4bbbe
+      internalID: -1436606356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_120
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 66
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6c5005de9ff48469103fe825e6e072
+      internalID: 1297057181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_121
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 66
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9deff8c48e544a2952e1be6c8cc227
+      internalID: -1826514254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_122
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 66
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cce806b639b349ffa519aee37c1e509
+      internalID: 627278183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 18
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b55a430effe74785a8bc7af3c94de7d
+      internalID: 784773388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Japanese_Home_1_Layer_2_48x48_124
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 18
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678aeb7e2cad048af9b6706144ac453b
+      internalID: -2146533453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Japanese_Home_1_Layer_2_48x48_0: -1727356024
+      Japanese_Home_1_Layer_2_48x48_1: -891217869
+      Japanese_Home_1_Layer_2_48x48_10: -1473532050
+      Japanese_Home_1_Layer_2_48x48_100: -1232226158
+      Japanese_Home_1_Layer_2_48x48_101: -303444149
+      Japanese_Home_1_Layer_2_48x48_102: -200251043
+      Japanese_Home_1_Layer_2_48x48_103: -1040983960
+      Japanese_Home_1_Layer_2_48x48_104: 1272362689
+      Japanese_Home_1_Layer_2_48x48_105: 766928982
+      Japanese_Home_1_Layer_2_48x48_106: 556753072
+      Japanese_Home_1_Layer_2_48x48_107: -1061335188
+      Japanese_Home_1_Layer_2_48x48_108: 542617007
+      Japanese_Home_1_Layer_2_48x48_109: 1020544537
+      Japanese_Home_1_Layer_2_48x48_11: 848565474
+      Japanese_Home_1_Layer_2_48x48_110: -1928748076
+      Japanese_Home_1_Layer_2_48x48_111: 302475847
+      Japanese_Home_1_Layer_2_48x48_112: -357608499
+      Japanese_Home_1_Layer_2_48x48_113: 245556227
+      Japanese_Home_1_Layer_2_48x48_114: 933659860
+      Japanese_Home_1_Layer_2_48x48_115: -2125903271
+      Japanese_Home_1_Layer_2_48x48_116: 195934013
+      Japanese_Home_1_Layer_2_48x48_117: -1923710265
+      Japanese_Home_1_Layer_2_48x48_118: -304645582
+      Japanese_Home_1_Layer_2_48x48_119: -1436606356
+      Japanese_Home_1_Layer_2_48x48_12: 49742033
+      Japanese_Home_1_Layer_2_48x48_120: 1297057181
+      Japanese_Home_1_Layer_2_48x48_121: -1826514254
+      Japanese_Home_1_Layer_2_48x48_122: 627278183
+      Japanese_Home_1_Layer_2_48x48_123: 784773388
+      Japanese_Home_1_Layer_2_48x48_124: -2146533453
+      Japanese_Home_1_Layer_2_48x48_13: -2146903404
+      Japanese_Home_1_Layer_2_48x48_14: 1991726611
+      Japanese_Home_1_Layer_2_48x48_15: 1791424662
+      Japanese_Home_1_Layer_2_48x48_16: 837935091
+      Japanese_Home_1_Layer_2_48x48_17: 1547634684
+      Japanese_Home_1_Layer_2_48x48_18: 237454386
+      Japanese_Home_1_Layer_2_48x48_19: -452379302
+      Japanese_Home_1_Layer_2_48x48_2: 485412886
+      Japanese_Home_1_Layer_2_48x48_20: -1334082087
+      Japanese_Home_1_Layer_2_48x48_21: 48941129
+      Japanese_Home_1_Layer_2_48x48_22: 490747377
+      Japanese_Home_1_Layer_2_48x48_23: 536408515
+      Japanese_Home_1_Layer_2_48x48_24: -1105516389
+      Japanese_Home_1_Layer_2_48x48_25: 784173868
+      Japanese_Home_1_Layer_2_48x48_26: 2108495871
+      Japanese_Home_1_Layer_2_48x48_27: -1847391153
+      Japanese_Home_1_Layer_2_48x48_28: 371322655
+      Japanese_Home_1_Layer_2_48x48_29: 312936308
+      Japanese_Home_1_Layer_2_48x48_3: 1382826197
+      Japanese_Home_1_Layer_2_48x48_30: 1462776277
+      Japanese_Home_1_Layer_2_48x48_31: 125835254
+      Japanese_Home_1_Layer_2_48x48_32: -1977734857
+      Japanese_Home_1_Layer_2_48x48_33: -901588738
+      Japanese_Home_1_Layer_2_48x48_34: -358034162
+      Japanese_Home_1_Layer_2_48x48_35: 1812125560
+      Japanese_Home_1_Layer_2_48x48_36: -1599996502
+      Japanese_Home_1_Layer_2_48x48_37: 542621998
+      Japanese_Home_1_Layer_2_48x48_38: 565082315
+      Japanese_Home_1_Layer_2_48x48_39: -1496289750
+      Japanese_Home_1_Layer_2_48x48_4: 1038871601
+      Japanese_Home_1_Layer_2_48x48_40: 169558746
+      Japanese_Home_1_Layer_2_48x48_41: 1620481136
+      Japanese_Home_1_Layer_2_48x48_42: -892515924
+      Japanese_Home_1_Layer_2_48x48_43: -612741556
+      Japanese_Home_1_Layer_2_48x48_44: 1233176300
+      Japanese_Home_1_Layer_2_48x48_45: 1208013671
+      Japanese_Home_1_Layer_2_48x48_46: -974768806
+      Japanese_Home_1_Layer_2_48x48_47: 1457217157
+      Japanese_Home_1_Layer_2_48x48_48: -1232178288
+      Japanese_Home_1_Layer_2_48x48_49: 1235079846
+      Japanese_Home_1_Layer_2_48x48_5: -774090690
+      Japanese_Home_1_Layer_2_48x48_50: -1366959649
+      Japanese_Home_1_Layer_2_48x48_51: -2110702064
+      Japanese_Home_1_Layer_2_48x48_52: 1842919854
+      Japanese_Home_1_Layer_2_48x48_53: 1049432912
+      Japanese_Home_1_Layer_2_48x48_54: -761695306
+      Japanese_Home_1_Layer_2_48x48_55: -443609656
+      Japanese_Home_1_Layer_2_48x48_56: -1320107594
+      Japanese_Home_1_Layer_2_48x48_57: 128559313
+      Japanese_Home_1_Layer_2_48x48_58: -1730430004
+      Japanese_Home_1_Layer_2_48x48_59: 1171878816
+      Japanese_Home_1_Layer_2_48x48_6: -1647822984
+      Japanese_Home_1_Layer_2_48x48_60: -1272691403
+      Japanese_Home_1_Layer_2_48x48_61: -24323571
+      Japanese_Home_1_Layer_2_48x48_62: 938187320
+      Japanese_Home_1_Layer_2_48x48_63: 589471961
+      Japanese_Home_1_Layer_2_48x48_64: 65327709
+      Japanese_Home_1_Layer_2_48x48_65: -1646888201
+      Japanese_Home_1_Layer_2_48x48_66: 1586057739
+      Japanese_Home_1_Layer_2_48x48_67: -2138362945
+      Japanese_Home_1_Layer_2_48x48_68: -1935133262
+      Japanese_Home_1_Layer_2_48x48_69: -2141455608
+      Japanese_Home_1_Layer_2_48x48_7: -335708808
+      Japanese_Home_1_Layer_2_48x48_70: 1137909332
+      Japanese_Home_1_Layer_2_48x48_71: 1694711065
+      Japanese_Home_1_Layer_2_48x48_72: 191271588
+      Japanese_Home_1_Layer_2_48x48_73: 1013454109
+      Japanese_Home_1_Layer_2_48x48_74: -409959918
+      Japanese_Home_1_Layer_2_48x48_75: 1378653523
+      Japanese_Home_1_Layer_2_48x48_76: -1147453009
+      Japanese_Home_1_Layer_2_48x48_77: -1665229093
+      Japanese_Home_1_Layer_2_48x48_78: 1334261207
+      Japanese_Home_1_Layer_2_48x48_79: -506802492
+      Japanese_Home_1_Layer_2_48x48_8: -144982197
+      Japanese_Home_1_Layer_2_48x48_80: 1650252460
+      Japanese_Home_1_Layer_2_48x48_81: -302583807
+      Japanese_Home_1_Layer_2_48x48_82: 475698262
+      Japanese_Home_1_Layer_2_48x48_83: 81415947
+      Japanese_Home_1_Layer_2_48x48_84: 285197066
+      Japanese_Home_1_Layer_2_48x48_85: -1396735389
+      Japanese_Home_1_Layer_2_48x48_86: 1076844089
+      Japanese_Home_1_Layer_2_48x48_87: -1151183491
+      Japanese_Home_1_Layer_2_48x48_88: -87809032
+      Japanese_Home_1_Layer_2_48x48_89: 1603565395
+      Japanese_Home_1_Layer_2_48x48_9: 1853885129
+      Japanese_Home_1_Layer_2_48x48_90: -295923414
+      Japanese_Home_1_Layer_2_48x48_91: 1444381528
+      Japanese_Home_1_Layer_2_48x48_92: 599786938
+      Japanese_Home_1_Layer_2_48x48_93: -1629812980
+      Japanese_Home_1_Layer_2_48x48_94: 2131305270
+      Japanese_Home_1_Layer_2_48x48_95: 1033245871
+      Japanese_Home_1_Layer_2_48x48_96: 663634905
+      Japanese_Home_1_Layer_2_48x48_97: 47504682
+      Japanese_Home_1_Layer_2_48x48_98: 1349053898
+      Japanese_Home_1_Layer_2_48x48_99: 1888845434
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -66,3 +66,12 @@ public class GameController : MonoBehaviour
     
 }
 */
+
+public class ScriptData
+{
+    public int loadType; //type of resources to load; 1.BG 2.character
+    public string characterName;
+    public string spriteName; //image resource path;
+    public string dialogueContent;
+
+}

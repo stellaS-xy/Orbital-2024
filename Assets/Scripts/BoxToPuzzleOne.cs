@@ -10,7 +10,7 @@ public class BoxToPuzzleOne : MonoBehaviour
     public GameObject eventObj;
     public GameObject gameController;
     public GameObject bear;
-    public GameObject rabbit;
+ 
     public GameObject canvas;
     public GameObject grid;
     public GameObject screenImage;
