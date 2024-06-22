@@ -37,13 +37,13 @@ public class PanelAnim : MonoBehaviour
     {
         if (panelClosed) 
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 StartCoroutine(ShowPanel(panel));
                 panelClosed = false;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.F))
             {
                 StartCoroutine(HidePanel(panel));
                 panelClosed = true;
