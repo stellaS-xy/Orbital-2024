@@ -22,15 +22,18 @@ public class DialogueManager: MonoBehaviour
     public bool isScrolling;
 
     [SerializeField] private float textSpeed;
+
     private void Awake()
     {
         Instance = this;
     }
+
     private void Start() 
     {
         dialogueText.text = ""; // Ensure the dialogue text is empty initially
         dialogueBox.SetActive(false); // Ensure the dialogue box is hidden initially
         nameBox.SetActive(false); // Ensure the name box is hidden initially
+        instructionBox.SetActive(true);
         
     }
 
@@ -38,32 +41,31 @@ public class DialogueManager: MonoBehaviour
     {
         if (dialogueBox.activeInHierarchy)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if (isScrolling ==false)
+                if (isScrolling)
                 {
-                    ++currentLine;
-                if(currentLine < dialogueLines.Length)
-                {
-                    CheckName();
-                    //dialogueText.text = dialogueLines[currentLine];
-                    StartCoroutine(ScrollingText());
-
-                     
+                    StopAllCoroutines();
+                    dialogueText.text = dialogueLines[currentLine];
+                    isScrolling = false;
                 }
                 else
                 {
-                    dialogueBox.SetActive(false); // Hide the Box when the dialogue is done
-                    nameBox.SetActive(false); //Hide the Name Box when the dialogue is done
+                    currentLine++;
+                    if (currentLine < dialogueLines.Length)
+                    {
+                        CheckName();
+                        StartCoroutine(ScrollingText());
+                    }
+                    else
+                    {
+                        dialogueBox.SetActive(false); // Hide the Box when the dialogue is done
+                        nameBox.SetActive(false); //Hide the Name Box when the dialogue is done
+                        instructionBox.SetActive(true);
+                    }
                 }
-
-                }
-                
-
             }
-           
         }
-
     }
 
     public IEnumerator ShowDialogue(string[] _newLines, bool hasName) 
@@ -88,6 +90,8 @@ public class DialogueManager: MonoBehaviour
 
         // StartCoroutine(TypeDialogue(dialogue.Lines[currentLine]));
     }
+
+    
     public bool IsDialogueBoxActive()
     {
         return dialogueBox.activeInHierarchy;
@@ -125,6 +129,7 @@ public class DialogueManager: MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }
+
         isScrolling = false;
     }
 }
