@@ -3,7 +3,8 @@ using UnityEngine.Video;
 
 public class FridgeInteraction : MonoBehaviour
 {
-    public GameObject videoCanvas; 
+
+    public GameObject videoPlayerObject;
     public VideoPlayer videoPlayer; 
     public KeyCode interactKey = KeyCode.E; 
 
@@ -12,17 +13,23 @@ public class FridgeInteraction : MonoBehaviour
 
     private void Start()
     {
-        videoCanvas.SetActive(false); // Ensure the video canvas is initially disabled
+        if (videoPlayerObject == null || videoPlayer == null)
+        {
+            Debug.LogError("References to videoPlayerObject or videoPlayer are not assigned.");
+            return;
+        }
+
+        videoPlayerObject.SetActive(false); // Ensure the video player is initially disabled
         videoPlayer.loopPointReached += OnVideoFinished; // Subscribe to the event when the video finishes playing
     }
 
-    private void Update()
+
+    void Update()
     {
         if (isPlayerInRange && Input.GetKeyDown(interactKey) && !isInteracting)
         {
             InteractWithFridge();
-        
-        }
+        }   
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -51,7 +58,7 @@ public class FridgeInteraction : MonoBehaviour
     {
         Debug.Log("Bear interacted with the fridge and video starts to play");
         isInteracting = true;
-        videoCanvas.SetActive(true); // Enable the video canvas
+        videoPlayerObject.SetActive(true); // Enable the video canvas
         Debug.Log("Playing video...");
         videoPlayer.Play(); // Play the video
 
@@ -68,7 +75,7 @@ public class FridgeInteraction : MonoBehaviour
     private void OnVideoFinished(VideoPlayer vp)
     {
         Debug.Log("video done playing");
-        videoCanvas.SetActive(false); // Disable the video canvas
+        videoPlayerObject.SetActive(false); // Disable the video canvas
         isInteracting = false;
     }
 }
