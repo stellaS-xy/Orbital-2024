@@ -87,9 +87,12 @@ public class CardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check for completion
         if (_gameover)
         {
+            // Scene switch back the main game after completing the puzzle
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            
         }
 
 
@@ -99,11 +102,12 @@ public class CardManager : MonoBehaviour
 
     private void MouseInput()
     {
+        // On click send out ray to see if we click a piece
         if (Input.GetMouseButtonDown(0))
         {
             if (_currentTarget != null && _rotateCardList.Count < 2 && !_rotateCardList.Contains(_currentTarget))
             {
-                step++;
+                //step++;
                 //UIManager.Instance.ShowStep(step);
                 _currentTarget.Rotate();
 
@@ -131,10 +135,6 @@ public class CardManager : MonoBehaviour
                 {
                     Victory();
                 }
-            
-            
-            
-            
             }
             else
             {
@@ -182,7 +182,7 @@ public class CardManager : MonoBehaviour
         }
     }
 
-    bool IsVictory()
+        bool IsVictory()
     {
 
         bool isVictory = true;
