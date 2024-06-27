@@ -212,7 +212,6 @@ ScriptedImporter:
     cells:
     - name: Hand_1_Magnifying_glass_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 37
         y: 2
@@ -221,7 +220,6 @@ ScriptedImporter:
       spriteId: 5c671ae469edf487cb269b47f5bfbad7
     - name: Hand_1_Magnifying_glass_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 37
         y: 2
@@ -230,7 +228,6 @@ ScriptedImporter:
       spriteId: a0e96afcbd5424a0aa010d3547979cb7
     - name: Hand_1_Magnifying_glass_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 37
         y: 2
@@ -239,7 +236,6 @@ ScriptedImporter:
       spriteId: 0dbe771261599467584d7c2b0528040e
     - name: Hand_1_Magnifying_glass_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 37
         y: 2

@@ -192,7 +192,6 @@ ScriptedImporter:
     cells:
     - name: Accessory_09_Zombie_Brain_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 26
@@ -201,7 +200,6 @@ ScriptedImporter:
       spriteId: 6ec5f6a71d83a4628b733cb662771591
     - name: Accessory_09_Zombie_Brain_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 26
@@ -210,7 +208,6 @@ ScriptedImporter:
       spriteId: 80f8eb0da62754571b0cb581a7a06bee
     - name: Accessory_09_Zombie_Brain_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 26
