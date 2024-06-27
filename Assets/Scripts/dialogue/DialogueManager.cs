@@ -6,9 +6,10 @@ using System;
 
 public class DialogueManager: MonoBehaviour
 { 
-    [SerializeField] GameObject dialogueBox, nameBox, instructionBox; //Display or Hide
+    [SerializeField] GameObject dialogueBox, nameBox, instructionBox, decisionBox; //Display or Hide
     [SerializeField] Text dialogueText, nameText, instructionText;
     [SerializeField] Image faceImage;
+    [SerializeField] Button option1Button, option2Button; // Buttons for options
 
     [Header("Face Image")]
     public Sprite face01, face02;
@@ -117,6 +118,26 @@ public class DialogueManager: MonoBehaviour
 
 
         }
+    }
+
+    public void ShowDecision(string option1, string option2, System.Action onOption1Selected, System.Action onOption2Selected)
+    {
+        decisionBox.SetActive(true);
+        option1Button.onClick.RemoveAllListeners();
+        option2Button.onClick.RemoveAllListeners();
+
+        option1Button.GetComponentInChildren<Text>().text = option1;
+        option2Button.GetComponentInChildren<Text>().text = option2;
+
+        option1Button.onClick.AddListener(() => {
+            decisionBox.SetActive(false);
+            onOption1Selected.Invoke();
+        });
+
+        option2Button.onClick.AddListener(() => {
+            decisionBox.SetActive(false);
+            onOption2Selected.Invoke();
+        });
     }
 
     private IEnumerator ScrollingText() 
