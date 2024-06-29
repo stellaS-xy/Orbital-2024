@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Interactive : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool isDone;
+    public void Check()
     {
-        
+        if (!isDone)
+        {
+            isDone = true;
+            // show the clue
+            OnClickedAction();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void OnClickedAction()
     {
-        
+
     }
 }
