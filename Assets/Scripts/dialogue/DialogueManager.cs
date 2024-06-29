@@ -6,9 +6,10 @@ using System;
 
 public class DialogueManager: MonoBehaviour
 { 
-    [SerializeField] GameObject dialogueBox, nameBox, instructionBox; //Display or Hide
+    [SerializeField] GameObject dialogueBox, nameBox, instructionBox, decisionBox; //Display or Hide
     [SerializeField] Text dialogueText, nameText, instructionText;
     [SerializeField] Image faceImage;
+    //[SerializeField] Button option1Button, option2Button; // Buttons for options
 
     [Header("Face Image")]
     public Sprite face01, face02;
@@ -23,6 +24,11 @@ public class DialogueManager: MonoBehaviour
 
     [SerializeField] private float textSpeed;
 
+    public event Action OnDialogueEnded;
+
+    
+
+
     private void Awake()
     {
         Instance = this;
@@ -34,7 +40,9 @@ public class DialogueManager: MonoBehaviour
         dialogueBox.SetActive(false); // Ensure the dialogue box is hidden initially
         nameBox.SetActive(false); // Ensure the name box is hidden initially
         instructionBox.SetActive(true);
-        
+        decisionBox.SetActive(false);
+
+
     }
 
     public void HandleUpdate()
@@ -59,9 +67,8 @@ public class DialogueManager: MonoBehaviour
                     }
                     else
                     {
-                        dialogueBox.SetActive(false); // Hide the Box when the dialogue is done
-                        nameBox.SetActive(false); //Hide the Name Box when the dialogue is done
-                        instructionBox.SetActive(true);
+                        EndDialogue();
+                        
                     }
                 }
             }
@@ -71,6 +78,9 @@ public class DialogueManager: MonoBehaviour
     public IEnumerator ShowDialogue(string[] _newLines, bool hasName) 
     {
         Debug.Log("ShowDialogue has been actived");
+
+       
+
         yield return new WaitForEndOfFrame();
 
  
@@ -89,6 +99,15 @@ public class DialogueManager: MonoBehaviour
         Debug.Log("ShowDialogue is done");
 
         // StartCoroutine(TypeDialogue(dialogue.Lines[currentLine]));
+    }
+
+    public void EndDialogue()
+    {
+        dialogueBox.SetActive(false); // Hide the Box when the dialogue is done
+        nameBox.SetActive(false); //Hide the Name Box when the dialogue is done
+        instructionBox.SetActive(true);
+        OnDialogueEnded?.Invoke();
+
     }
 
     
@@ -118,6 +137,29 @@ public class DialogueManager: MonoBehaviour
 
         }
     }
+
+    /*
+    public void ShowDecision(string option1, string option2, System.Action onOption1Selected, System.Action onOption2Selected)
+    {
+        decisionBox.SetActive(true);
+        option1Button.onClick.RemoveAllListeners();
+        option2Button.onClick.RemoveAllListeners();
+
+        option1Button.GetComponentInChildren<Text>().text = option1;
+        option2Button.GetComponentInChildren<Text>().text = option2;
+
+        option1Button.onClick.AddListener(() => {
+            decisionBox.SetActive(false);
+            onOption1Selected.Invoke();
+        });
+
+        option2Button.onClick.AddListener(() => {
+            decisionBox.SetActive(false);
+            onOption2Selected.Invoke();
+        });
+    }
+    */
+
 
     private IEnumerator ScrollingText() 
     {
