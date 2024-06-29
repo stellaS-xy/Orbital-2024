@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum GameState { FreeRoam, Dialogue, PuzzleSolving }
+public enum GameState { FreeRoam, Dialogue, PuzzleSolving, DecisionMaking}
 
 public class GameController : MonoBehaviour
 { 
     [SerializeField] PlayerController playerController;
     [SerializeField] Button button;
+    public GameObject DecisionBoxUI;
+    public GameObject DialogueBoxUI;
 
     GameState state;
 
@@ -38,22 +40,30 @@ public class GameController : MonoBehaviour
         {
             playerController.HandleUpdate();
 
-            if (DialogueManager.Instance.IsDialogueBoxActive())
+            if (DecisionBoxUI.activeInHierarchy | DialogueBoxUI.activeInHierarchy)
             {
                 state = GameState.Dialogue;
             }
+
+          
         }
+
         else if (state == GameState.Dialogue)
         {
             DialogueManager.Instance.HandleUpdate();
 
-            if (!DialogueManager.Instance.IsDialogueBoxActive())
+            if (!DecisionBoxUI.activeInHierarchy && !DialogueBoxUI.activeInHierarchy)
             {
                 state = GameState.FreeRoam;
             }
+
+            
+
         }
 
-        
+
+       
+            
     }
 }
 
@@ -67,6 +77,7 @@ public class GameController : MonoBehaviour
 }
 */
 
+/*
 public class ScriptData
 {
     public int loadType; //type of resources to load; 1.BG 2.character
@@ -75,3 +86,4 @@ public class ScriptData
     public string dialogueContent;
 
 }
+*/
