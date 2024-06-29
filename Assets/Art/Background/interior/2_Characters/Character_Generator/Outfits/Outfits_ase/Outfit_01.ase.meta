@@ -332,6 +332,7 @@ ScriptedImporter:
     cells:
     - name: Outfit_01_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -340,6 +341,7 @@ ScriptedImporter:
       spriteId: 8e3e590ed6d0745ea98d351e2eb12cd3
     - name: Outfit_01_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -348,6 +350,7 @@ ScriptedImporter:
       spriteId: 87f4192a0dac042cfa168daeb7a57b30
     - name: Outfit_01_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -356,6 +359,7 @@ ScriptedImporter:
       spriteId: 867776162860b4d75a28d0709c88c07d
     - name: Outfit_01_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -364,6 +368,7 @@ ScriptedImporter:
       spriteId: 9aee7b2d51fa5468dbd57d7d8b4a6e3a
     - name: Outfit_01_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -372,6 +377,7 @@ ScriptedImporter:
       spriteId: 48fe4804837014624b7f1035bf5a0b7e
     - name: Outfit_01_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -380,6 +386,7 @@ ScriptedImporter:
       spriteId: ade6e43c51fa64bc6a8c13b0ad57e3b0
     - name: Outfit_01_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -388,6 +395,7 @@ ScriptedImporter:
       spriteId: 31b2306cb88af4efab1d02bdc9bb43b7
     - name: Outfit_01_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -396,6 +404,7 @@ ScriptedImporter:
       spriteId: 5df5793300f5249209d70b076c54c2de
     - name: Outfit_01_Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -404,6 +413,7 @@ ScriptedImporter:
       spriteId: b57d12e15bda44d64b0a5602dbd8fe36
     - name: Outfit_01_Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
