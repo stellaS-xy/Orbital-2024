@@ -14,8 +14,18 @@ public class ClueManager : MonoBehaviour
     public NPCController rabbit;
 
     public GameObject directionCanvas;
-    public GameObject bearObject;
+   
+    public GameObject arrow;
 
+    public GameObject toNextScene;
+
+    private void Start()
+    {
+        arrow.SetActive(false);
+        rabbitObject.SetActive(false);
+        toNextScene.SetActive(false);
+
+    }
 
 
     private void Awake()
@@ -33,13 +43,20 @@ public class ClueManager : MonoBehaviour
 
     private void OnEnable()
     {
-        DialogueManager.Instance.OnDialogueEnded += OnRabbitDialogueEnded;
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.OnDialogueEnded += OnRabbitDialogueEnded;
+        }
     }
 
     private void OnDisable()
     {
-        DialogueManager.Instance.OnDialogueEnded -= OnRabbitDialogueEnded;
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.OnDialogueEnded -= OnRabbitDialogueEnded;
+        }
     }
+
 
     public void CollectClue(string clueName)
     {
@@ -68,24 +85,16 @@ public class ClueManager : MonoBehaviour
         rabbitObject.SetActive(true);
         rabbit.showButton();
         directionCanvas.SetActive(false);
-
-        rabbit.Interact();
+        arrow.SetActive(true);
+        
+        
     }
+
 
     private void OnRabbitDialogueEnded()
     {
-        // Transition to the next scene in sequence
-        Debug.Log("Transitioning to next scene in sequence.");
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        toNextScene.SetActive(true);
 
-        // Ensure the next scene index is within the valid range
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            Debug.LogError("No more scenes in build settings to load.");
-        }
     }
+
 }

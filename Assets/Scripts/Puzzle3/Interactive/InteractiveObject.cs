@@ -1,16 +1,17 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class InteractiveObject : MonoBehaviour, IPointerClickHandler
+public class InteractiveObject : MonoBehaviour
 {
     public GameObject canvasToShow;
+    public bool isPlayerInRange = false;
 
-    public void OnPointerClick(PointerEventData eventData)
+    private void Update()
     {
-        Debug.Log("Object clicked: " + gameObject.name);
-        ShowCanvas();
-        
-        ClueManager.Instance.CollectClue(gameObject.name);
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+        {
+            ShowCanvas();
+            ClueManager.Instance.CollectClue(gameObject.name);
+        }
     }
 
     private void ShowCanvas()
@@ -18,10 +19,29 @@ public class InteractiveObject : MonoBehaviour, IPointerClickHandler
         if (canvasToShow != null)
         {
             canvasToShow.SetActive(true);
+            Debug.Log("Canvas shown: " + canvasToShow.name);
         }
         else
         {
             Debug.LogError("Canvas to show is not assigned.");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("player"))
+        {
+            isPlayerInRange = true;
+            Debug.Log("Player entered interaction area: " + gameObject.name);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("player"))
+        {
+            isPlayerInRange = false;
+            Debug.Log("Player exited interaction area: " + gameObject.name);
         }
     }
 }

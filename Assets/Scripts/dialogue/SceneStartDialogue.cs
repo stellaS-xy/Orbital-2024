@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
 public class SceneStartDialogue : MonoBehaviour
@@ -20,14 +19,12 @@ public class SceneStartDialogue : MonoBehaviour
     public string requiredKeyForOption2;
     public string requiredKeyForOption3;
 
-    public GameObject videoPlayerObject;
-    public VideoPlayer videoPlayer;
+    public GameObject gifPlayerObject;
+    public gifPlayer gifPlayer;
     public GameObject dialogueBox;
-    public Camera videoCamera;
-
     public GameObject instructionBox;
 
-
+   
 
 
 
@@ -47,15 +44,9 @@ public class SceneStartDialogue : MonoBehaviour
             Debug.LogError("DialogueManager instance not found. Ensure you have a DialogueManager in the scene.");
         }
 
-        if (videoPlayer != null)
+        if (gifPlayerObject != null)
         {
-            videoPlayer.Stop();
-            videoPlayerObject.SetActive(false);
-            videoPlayer.renderMode = VideoRenderMode.CameraNearPlane;
-            videoPlayer.targetCamera = videoCamera;
-            videoPlayer.prepareCompleted += OnVideoPrepared;
-            videoPlayer.started += OnVideoStarted;
-            videoPlayer.loopPointReached += OnVideoEnded;
+            gifPlayerObject.SetActive(false);
         }
     }
 
@@ -82,24 +73,20 @@ public class SceneStartDialogue : MonoBehaviour
                     if (DecisionManager.Instance.HasKey(requiredKeyForOption2))
                     {
                         actions[i] = OnOption2Selected;
-                        
                     }
                     else
                     {
                         actions[i] = null;
-                        
                     }
                     break;
                 case 2:
                     if (DecisionManager.Instance.HasKey(requiredKeyForOption3))
                     {
                         actions[i] = OnOption3Selected;
-                        
                     }
                     else
                     {
                         actions[i] = null;
-                        
                     }
                     break;
             }
@@ -125,15 +112,13 @@ public class SceneStartDialogue : MonoBehaviour
 
         yield return StartCoroutine(WaitForDialogueToEnd());
 
-        Debug.Log("Starting video playback");
-        videoPlayerObject.SetActive(true);
-        yield return StartCoroutine(PlayVideo());
-        Debug.Log("PlayVideo is called");
-        
+        Debug.Log("Starting GIF playback");
+        gifPlayerObject.SetActive(true);
+        gifPlayer.enabled = true;
+        yield return StartCoroutine(PlayGIF());
+        Debug.Log("PlayGIF is called");
 
-        
-
-        // After the video is played, mark option 1 as completed and show the decision UI again
+        // After the GIF is played, mark option 1 as completed and show the decision UI again
         DecisionManager.Instance.CompleteOption1();
         ShowDecision();
     }
@@ -148,67 +133,21 @@ public class SceneStartDialogue : MonoBehaviour
         Debug.Log("Dialogue ended");
     }
 
-    private IEnumerator PlayVideo()
+    private IEnumerator PlayGIF()
     {
-
-        Debug.Log("Playing video...");
-
-
-        videoPlayerObject.SetActive(true); // Enable the video canvas
-
-        videoPlayer.Prepare();
-        yield return new WaitUntil(() => videoPlayer.isPrepared);
-
+        Debug.Log("Playing GIF...");
         instructionBox.SetActive(false);
-        videoPlayer.Play(); // Play the video
 
-        Debug.Log("Playing video...");
-        while (videoPlayer.isPlaying)
+        // Wait until the GIF has finished playing
+        while (!gifPlayer.IsAnimationFinished())
         {
             yield return null;
         }
 
-        videoPlayerObject.SetActive(false); // Disable the video canvas
-        Debug.Log("Video finished.");
+        gifPlayerObject.SetActive(false); // Disable the GIF player
+        Debug.Log("GIF finished.");
         instructionBox.SetActive(true);
     }
-
-
-    private void OnVideoPrepared(VideoPlayer vp)
-    {
-        Debug.Log("Video is prepared.");
-    }
-
-
-    private void OnVideoStarted(VideoPlayer vp)
-    {
-        Debug.Log("Video has started.");
-    }
-
-
-    private void OnVideoEnded(VideoPlayer vp)
-    {
-        Debug.Log("Video has ended.");
-    }
-
-
-    /* Additional log to check if the video is prepared
-    videoPlayer.prepareCompleted += VideoPlayer_prepareCompleted;
-    videoPlayer.Prepare();
-
-
-    Debug.Log("Video finished.");
-}
-
-
-
-private void VideoPlayer_prepareCompleted(VideoPlayer source)
-{
-    Debug.Log("Video is prepared and playing.");
-    videoPlayer.Play();
-}
-    */
-
 
     private void OnOption2Selected()
     {
@@ -243,13 +182,22 @@ private void VideoPlayer_prepareCompleted(VideoPlayer source)
         {
             if (option3Dialogue != null && option3Dialogue.Length > 0)
             {
-                StartCoroutine(DialogueManager.Instance.ShowDialogue(option3Dialogue, false));
+                StartCoroutine(HandleOption3Dialogue());
             }
         }
         else
         {
             Debug.Log("Option 3 is not available yet.");
         }
+    }
+
+    private IEnumerator HandleOption3Dialogue()
+    {
+        Debug.Log("HandleOption3Dialogue being called");
+        yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option3Dialogue, false));
+        Debug.Log("DialogueManager handled option3 dialogue");
+
+        // No further actions specified for option 3, add logic here if needed
     }
 
     private void LoadNextSceneInSequence()
@@ -267,6 +215,4 @@ private void VideoPlayer_prepareCompleted(VideoPlayer source)
             Debug.LogError("No more scenes in build settings to load.");
         }
     }
-
 }
-

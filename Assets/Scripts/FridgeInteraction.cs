@@ -1,49 +1,58 @@
 using UnityEngine;
-using UnityEngine.Video;
+using UnityEngine.UI;
+using System.Collections;
 
 public class FridgeInteraction : MonoBehaviour
 {
-
-    public GameObject videoPlayerObject;
-    public VideoPlayer videoPlayer; 
-    public KeyCode interactKey = KeyCode.E; 
+    public GameObject gifPlayerObject;
+    public Image gifImage;
+    public KeyCode interactKey = KeyCode.E;
 
     public bool isPlayerInRange = false;
     public bool isInteracting = false;
     private bool firstTimePlaying = true;
     public GameObject arrows;
 
-
     public string[] postVideoDialogue; // Dialogue lines to display after the video
     private DialogueManager dialogueManager;
 
+    private gifPlayer gifPlayer;
 
     private void Start()
     {
-        if (videoPlayerObject == null || videoPlayer == null)
+        if (gifPlayerObject == null || gifImage == null)
         {
-            Debug.LogError("References to videoPlayerObject or videoPlayer are not assigned.");
+            Debug.LogError("References to gifPlayerObject or gifImage are not assigned.");
             return;
         }
 
         arrows.SetActive(false);
-        videoPlayerObject.SetActive(false); // Ensure the video player is initially disabled
-        videoPlayer.loopPointReached += OnVideoFinished; // Subscribe to the event when the video finishes playing
+        gifPlayerObject.SetActive(false); // Ensure the GIF player is initially disabled
 
         dialogueManager = DialogueManager.Instance;
         if (dialogueManager == null)
         {
             Debug.LogError("DialogueManager instance not found in the scene.");
         }
-    }
 
+        gifPlayer = gifPlayerObject.GetComponent<gifPlayer>();
+        if (gifPlayer == null)
+        {
+            Debug.LogError("gifPlayer component not found on gifPlayerObject.");
+        }
+    }
 
     void Update()
     {
         if (isPlayerInRange && Input.GetKeyDown(interactKey) && !isInteracting && firstTimePlaying)
         {
             InteractWithFridge();
-        }   
+        }
+
+        if (isInteracting && gifPlayer != null)
+        {
+            PlayGIF();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -57,7 +66,6 @@ public class FridgeInteraction : MonoBehaviour
         {
             Debug.Log("is entered, but not player");
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -70,28 +78,25 @@ public class FridgeInteraction : MonoBehaviour
 
     private void InteractWithFridge()
     {
-        Debug.Log("Bear interacted with the fridge and video starts to play");
+        Debug.Log("Bear interacted with the fridge and GIF starts to play");
         isInteracting = true;
         firstTimePlaying = false;
-        videoPlayerObject.SetActive(true); // Enable the video canvas
-        Debug.Log("Playing video...");
-        videoPlayer.Play(); // Play the video
-
-        // Additional log to check if the video is prepared
-        videoPlayer.prepareCompleted += VideoPlayer_prepareCompleted;
-        videoPlayer.Prepare();
+        gifPlayerObject.SetActive(true); // Enable the GIF player
     }
 
-    private void VideoPlayer_prepareCompleted(VideoPlayer source)
+    private void PlayGIF()
     {
-        Debug.Log("Video is prepared and playing.");
-        videoPlayer.Play();
+        // Check if the GIF has finished playing
+        if (gifPlayer != null && gifPlayer.IsAnimationFinished())
+        {
+            OnGIFFinished();
+        }
     }
 
-    private void OnVideoFinished(VideoPlayer vp)
+    private void OnGIFFinished()
     {
-        Debug.Log("video done playing");
-        videoPlayerObject.SetActive(false); // Disable the video canvas
+        Debug.Log("GIF done playing");
+        gifPlayerObject.SetActive(false); // Disable the GIF player
         isInteracting = false;
         arrows.SetActive(true);
 
@@ -99,6 +104,5 @@ public class FridgeInteraction : MonoBehaviour
         {
             StartCoroutine(dialogueManager.ShowDialogue(postVideoDialogue, false));
         }
-
     }
 }
