@@ -13,9 +13,7 @@ public class Cookie : MonoBehaviour {
         if (clickObj != null) {
             clickObj.GetComponent<EventDispatcher>().MouseDown += OnMouseDown;          
         }
-
-      
- }
+    }
     private void OnMouseDown(GameObject e)
     {
         Debug.Log("点击物体："+e);
