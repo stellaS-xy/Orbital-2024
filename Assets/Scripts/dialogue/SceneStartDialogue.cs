@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class SceneStartDialogue : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class SceneStartDialogue : MonoBehaviour
     public Camera videoCamera;
 
     public GameObject instructionBox;
+
+
 
 
 
@@ -214,13 +217,23 @@ private void VideoPlayer_prepareCompleted(VideoPlayer source)
         {
             if (option2Dialogue != null && option2Dialogue.Length > 0)
             {
-                StartCoroutine(DialogueManager.Instance.ShowDialogue(option2Dialogue, false));
+                StartCoroutine(HandleOption2Dialogue());
             }
         }
         else
         {
             Debug.Log("Option 2 is not available yet.");
         }
+    }
+
+    private IEnumerator HandleOption2Dialogue()
+    {
+        Debug.Log("HandleOption2Dialogue being called");
+        yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option2Dialogue, false));
+        Debug.Log("DialogueManager handled option2 dialogue");
+
+        // Transition to the next scene in sequence
+        LoadNextSceneInSequence();
     }
 
     private void OnOption3Selected()
@@ -238,5 +251,22 @@ private void VideoPlayer_prepareCompleted(VideoPlayer source)
             Debug.Log("Option 3 is not available yet.");
         }
     }
+
+    private void LoadNextSceneInSequence()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        // Ensure the next scene index is within the valid range
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.LogError("No more scenes in build settings to load.");
+        }
+    }
+
 }
 

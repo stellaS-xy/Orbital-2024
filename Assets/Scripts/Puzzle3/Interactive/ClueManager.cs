@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class ClueManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class ClueManager : MonoBehaviour
     public GameObject directionCanvas;
     public GameObject bearObject;
 
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +29,16 @@ public class ClueManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnEnable()
+    {
+        DialogueManager.Instance.OnDialogueEnded += OnRabbitDialogueEnded;
+    }
+
+    private void OnDisable()
+    {
+        DialogueManager.Instance.OnDialogueEnded -= OnRabbitDialogueEnded;
     }
 
     public void CollectClue(string clueName)
@@ -55,6 +68,24 @@ public class ClueManager : MonoBehaviour
         rabbitObject.SetActive(true);
         rabbit.showButton();
         directionCanvas.SetActive(false);
-        bearObject.SetActive(true);
+
+        rabbit.Interact();
+    }
+
+    private void OnRabbitDialogueEnded()
+    {
+        // Transition to the next scene in sequence
+        Debug.Log("Transitioning to next scene in sequence.");
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+        // Ensure the next scene index is within the valid range
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.LogError("No more scenes in build settings to load.");
+        }
     }
 }
