@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Footprint : MonoBehaviour {
+public class Cookie : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
 
-        GameObject clickObj = GameObject.Find("footprint");
+        GameObject clickObj = GameObject.Find("cookie");
         Debug.Log(clickObj);
         if (clickObj != null) {
             clickObj.GetComponent<EventDispatcher>().MouseDown += OnMouseDown;          

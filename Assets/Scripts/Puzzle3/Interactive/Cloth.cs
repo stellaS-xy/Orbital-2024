@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Footprint : MonoBehaviour {
+public class Cloth : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
 
-        GameObject clickObj = GameObject.Find("footprint");
+        GameObject clickObj = GameObject.Find("cloth");
         Debug.Log(clickObj);
         if (clickObj != null) {
             clickObj.GetComponent<EventDispatcher>().MouseDown += OnMouseDown;          
