@@ -12,7 +12,7 @@ public class DialogueManager: MonoBehaviour
     //[SerializeField] Button option1Button, option2Button; // Buttons for options
 
     [Header("Face Image")]
-    public Sprite face01, face02;
+    public Sprite rabbitFace, bearFace, foxFace, lionFace, narratorFace;
 
     [TextArea(1,3)]
     public string[] dialogueLines;
@@ -93,7 +93,7 @@ public class DialogueManager: MonoBehaviour
         StartCoroutine(ScrollingText());
 
         dialogueBox.SetActive(true);
-        nameBox.SetActive(hasName);
+        nameBox.SetActive(true);
         instructionBox.SetActive(false);
         
         Debug.Log("ShowDialogue is done");
@@ -118,25 +118,42 @@ public class DialogueManager: MonoBehaviour
 
     private void CheckName()
     {
-        if(dialogueLines[currentLine].StartsWith("n-"))
+        if (dialogueLines[currentLine].StartsWith("n-"))
         {
-            nameText.text = dialogueLines[currentLine].Replace("n-","");
-            
-            if (dialogueLines[currentLine] == "n-Sammy")
+            nameText.text = dialogueLines[currentLine].Replace("n-", "").Trim();
+
+            if (dialogueLines[currentLine].Contains("Sammy"))
             {
-                faceImage.sprite = face01;
+                faceImage.sprite = rabbitFace;
+                Debug.Log("Setting face to Sammy (Rabbit)");
+            }
+            else if (dialogueLines[currentLine].Contains("Truth"))
+            {
+                faceImage.sprite = bearFace;
+                Debug.Log("Setting face to Truth (Bear)");
+            }
+            else if (dialogueLines[currentLine].Contains("Rexa"))
+            {
+                faceImage.sprite = lionFace;
+                Debug.Log("Setting face to Rexa (Lion)");
+            }
+            else if (dialogueLines[currentLine].Contains("Finn"))
+            {
+                faceImage.sprite = foxFace;
+                Debug.Log("Setting face to default (Fox)");
             }
             else
             {
-                faceImage.sprite = face02;
+                faceImage.sprite = narratorFace;
+                Debug.Log("Setting face to default (Narrator)");
+
             }
 
+
             currentLine++;
-
-
-
         }
     }
+
 
     /*
     public void ShowDecision(string option1, string option2, System.Action onOption1Selected, System.Action onOption2Selected)

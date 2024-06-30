@@ -80,7 +80,7 @@ public class Puzzle2Manager : MonoBehaviour
             if (!shuffling && CheckCompletion()) {
                 shuffling = true;
                 // Scene switch back the main game after completing the puzzle
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
