@@ -192,6 +192,7 @@ ScriptedImporter:
     cells:
     - name: Outfit_09_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -200,6 +201,7 @@ ScriptedImporter:
       spriteId: e01bcddeafa1e4b0f9d1ee583570ff91
     - name: Outfit_09_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -208,6 +210,7 @@ ScriptedImporter:
       spriteId: 0c9d9e375921e4f5fac59ddf422c9a3c
     - name: Outfit_09_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16

@@ -191,13 +191,6 @@ public class DialogueManager: MonoBehaviour
 
         isScrolling = false;
     }
-
-    /*
-    void OnGUI()
-    {
-        Debug.Log(GUI.skin.button.clipping);
-    }
-    */
 }
 
     

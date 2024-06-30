@@ -212,6 +212,7 @@ ScriptedImporter:
     cells:
     - name: Accessory_14_Gloves_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 20
@@ -220,6 +221,7 @@ ScriptedImporter:
       spriteId: 8949e57daaccd40c8b5a6354b8a62299
     - name: Accessory_14_Gloves_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 20
@@ -228,6 +230,7 @@ ScriptedImporter:
       spriteId: aacab445eb1114be49c2e6f905938823
     - name: Accessory_14_Gloves_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 20
@@ -236,6 +239,7 @@ ScriptedImporter:
       spriteId: 5bb910fa2754042e49e154104e4d2e80
     - name: Accessory_14_Gloves_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 20
