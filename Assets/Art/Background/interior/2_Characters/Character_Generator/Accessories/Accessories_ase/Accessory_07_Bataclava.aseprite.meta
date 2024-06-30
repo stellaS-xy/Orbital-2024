@@ -192,6 +192,7 @@ ScriptedImporter:
     cells:
     - name: Accessory_07_Bataclava_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 23
@@ -200,6 +201,7 @@ ScriptedImporter:
       spriteId: 1d4bd456d75ba4af6a10dc993f1fcd3f
     - name: Accessory_07_Bataclava_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 23
@@ -208,6 +210,7 @@ ScriptedImporter:
       spriteId: ad2be918395004a95b21d0af81a4e499
     - name: Accessory_07_Bataclava_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 23
