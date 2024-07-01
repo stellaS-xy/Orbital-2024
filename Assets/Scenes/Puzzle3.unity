@@ -316,8 +316,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1826326324}
-  - {fileID: 949543186}
   - {fileID: 1322805466}
+  - {fileID: 949543186}
   m_Father: {fileID: 1526393905}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 1322805470}
   - component: {fileID: 1322805469}
   - component: {fileID: 1322805468}
-  - component: {fileID: 1322805467}
+  - component: {fileID: 1322805471}
   m_Layer: 5
   m_Name: Skip
   m_TagString: Untagged
@@ -1080,18 +1080,6 @@ RectTransform:
   m_AnchoredPosition: {x: 790, y: 327}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1322805467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322805465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a5f4cadd05f849e2828c790301e4a3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1322805468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,9 +1124,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322805467}
-        m_TargetAssemblyTypeName: Skip, Assembly-CSharp
-        m_MethodName: SkipPuzzle
+      - m_Target: {fileID: 1322805471}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadNextSceneInSequence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1186,6 +1174,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322805465}
   m_CullTransparentMesh: 1
+--- !u!114 &1322805471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322805465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938df01c8a17b4fd6a953a4b56576f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1388560294
 GameObject:
   m_ObjectHideFlags: 0

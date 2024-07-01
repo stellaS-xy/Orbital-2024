@@ -9,9 +9,11 @@ public class Puzzle2Deduction : MonoBehaviour
     public Button option1Button;
     public Button option2Button;
     public Button option3Button;
+    private SceneLoader sceneLoader;
 
     private void Start()
     {
+        sceneLoader = FindObjectOfType<SceneLoader>(); // Find the SceneLoader in the scene
         option1Button.onClick.AddListener(() => SelectOption(1));
         option2Button.onClick.AddListener(() => SelectOption(2));
         option3Button.onClick.AddListener(() => SelectOption(3));
@@ -42,6 +44,19 @@ public class Puzzle2Deduction : MonoBehaviour
 
     private void LoadNextSceneInSequence()
     {
+        if (sceneLoader != null)
+        {
+            sceneLoader.LoadNextSceneInSequence();
+        }
+        else
+        {
+            Debug.LogError("SceneLoader not found in the scene.");
+        }
+    }
+
+    /*
+    private void LoadNextSceneInSequence()
+    {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
 
@@ -55,4 +70,5 @@ public class Puzzle2Deduction : MonoBehaviour
             Debug.LogError("No more scenes in build settings to load.");
         }
     }
+    */
 }
