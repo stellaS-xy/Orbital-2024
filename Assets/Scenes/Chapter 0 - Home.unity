@@ -1143,72 +1143,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7124665500211724146, guid: 836ea850bdcb245b9bbf0afb1bdf2914, type: 3}
   m_PrefabInstance: {fileID: 177132583}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1984670378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1984670380}
-  - component: {fileID: 1984670379}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!328 &1984670379
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984670378}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 73d222d4550a146a6b8c84623d42d943, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 1240259605}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 1
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!4 &1984670380
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984670378}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 631.93567, y: 25.620079, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2110282293 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 377729718452133414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
@@ -1273,6 +1207,10 @@ PrefabInstance:
       value: SceneStartDialogueObject
       objectReference: {fileID: 0}
     - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
+      propertyPath: gifPlayer
+      value: 
+      objectReference: {fileID: 297600201}
+    - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 193663082}
@@ -1283,15 +1221,19 @@ PrefabInstance:
     - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
       propertyPath: videoPlayer
       value: 
-      objectReference: {fileID: 1984670379}
+      objectReference: {fileID: 0}
     - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
       propertyPath: instructionBox
       value: 
       objectReference: {fileID: 294665263}
     - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
+      propertyPath: gifPlayerObject
+      value: 
+      objectReference: {fileID: 297600199}
+    - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
       propertyPath: videoPlayerObject
       value: 
-      objectReference: {fileID: 1984670378}
+      objectReference: {fileID: 0}
     - target: {fileID: 8635283971701914746, guid: ddd6fac87de324750a3c0e4e61ebcd17, type: 3}
       propertyPath: requiredKeyForOption2
       value: null
@@ -1324,7 +1266,7 @@ PrefabInstance:
     - target: {fileID: 350379195505689663, guid: 18f529b17e4d0445882f2b231f922497, type: 3}
       propertyPath: videoPlayer
       value: 
-      objectReference: {fileID: 1984670379}
+      objectReference: {fileID: 0}
     - target: {fileID: 350379195505689663, guid: 18f529b17e4d0445882f2b231f922497, type: 3}
       propertyPath: videoFileName
       value: My Movie
@@ -1336,7 +1278,7 @@ PrefabInstance:
     - target: {fileID: 350379195505689663, guid: 18f529b17e4d0445882f2b231f922497, type: 3}
       propertyPath: videoPlayerObject
       value: 
-      objectReference: {fileID: 1984670378}
+      objectReference: {fileID: 0}
     - target: {fileID: 6948181090010161581, guid: 18f529b17e4d0445882f2b231f922497, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1397,4 +1339,3 @@ SceneRoots:
   - {fileID: 597230884}
   - {fileID: 840861938}
   - {fileID: 703912707142982693}
-  - {fileID: 1984670380}
