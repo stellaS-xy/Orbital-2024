@@ -312,7 +312,6 @@ ScriptedImporter:
     cells:
     - name: Bodies_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -321,7 +320,6 @@ ScriptedImporter:
       spriteId: d424321413f2a4f00bb5ba135b2df532
     - name: Bodies_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -330,7 +328,6 @@ ScriptedImporter:
       spriteId: 2aff1411010c0427ba4d45de644d0221
     - name: Bodies_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -339,7 +336,6 @@ ScriptedImporter:
       spriteId: 086408c35f53f4b8db6ee4ceef6b2b04
     - name: Bodies_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -348,7 +344,6 @@ ScriptedImporter:
       spriteId: c21d43c8538c14ce08db5fcd4da84c7b
     - name: Bodies_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -357,7 +352,6 @@ ScriptedImporter:
       spriteId: 572af17a819964b36945dc119e2d3550
     - name: Bodies_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -366,7 +360,6 @@ ScriptedImporter:
       spriteId: 33c8cf340d57845a5b27fa6ada52ea06
     - name: Bodies_Frame_6
       frameIndex: 6
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -375,7 +368,6 @@ ScriptedImporter:
       spriteId: 001020680be574a80aa6cf66392f8f95
     - name: Bodies_Frame_7
       frameIndex: 7
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16
@@ -384,7 +376,6 @@ ScriptedImporter:
       spriteId: 9ebc619bb970047f5b8ceee93d703e1d
     - name: Bodies_Frame_8
       frameIndex: 8
-      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 16

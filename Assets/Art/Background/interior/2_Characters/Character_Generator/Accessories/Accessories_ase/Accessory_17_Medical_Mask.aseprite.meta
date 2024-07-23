@@ -232,7 +232,6 @@ ScriptedImporter:
     cells:
     - name: Accessory_17_Medical_Mask_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 22
@@ -241,7 +240,6 @@ ScriptedImporter:
       spriteId: d5831d76d73d445c7940cdaafe950a02
     - name: Accessory_17_Medical_Mask_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 22
@@ -250,7 +248,6 @@ ScriptedImporter:
       spriteId: ecb1a4fb1ead5489d9d7dca73efa0c5a
     - name: Accessory_17_Medical_Mask_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 22
@@ -259,7 +256,6 @@ ScriptedImporter:
       spriteId: 8347b57c293ae470f95cfbfb46852283
     - name: Accessory_17_Medical_Mask_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 22
@@ -268,7 +264,6 @@ ScriptedImporter:
       spriteId: 4f2644e2ba9ad47ffa288ae9cc06c038
     - name: Accessory_17_Medical_Mask_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 22

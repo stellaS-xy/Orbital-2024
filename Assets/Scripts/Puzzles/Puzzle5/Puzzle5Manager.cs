@@ -43,21 +43,30 @@ public class Puzzle5Manager : MonoBehaviour
 
     public void ValidateAnswer()
     {
-        playerAnswer = int.Parse(playerAnswerUI.text);
-        if (playerAnswer == correctAnswer) 
+        // Check if the input is valid
+        bool isValidInput = int.TryParse(playerAnswerUI.text, out playerAnswer);
+        if (isValidInput)
         {
-            UpdateHintMessage("Congrats!");
-            // Load the next scene after a short delay
-            Invoke("LoadNextSceneInSequence", 3f); 
-        } 
-        else 
+            if (playerAnswer == correctAnswer) 
+            {
+                UpdateHintMessage("Congrats!");
+                // Load the next scene after a short delay
+                Invoke("LoadNextSceneInSequence", 3f); 
+            } 
+            else 
+            {
+                // Select a random message from the list
+                int index = random.Next(messages.Count);
+                string randomMessage = messages[index];
+                UpdateHintMessage(randomMessage);
+            }
+        }
+        else
         {
-            // Select a random message from the list
-            int index = random.Next(messages.Count);
-            string randomMessage = messages[index];
-            UpdateHintMessage(randomMessage);
+            UpdateHintMessage("Invalid input. Please enter a number.");
         }
     }
+   
     private void LoadNextSceneInSequence()
     {
         if (sceneLoader != null)

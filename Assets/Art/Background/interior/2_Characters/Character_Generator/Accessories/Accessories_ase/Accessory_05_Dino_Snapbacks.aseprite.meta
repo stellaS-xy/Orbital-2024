@@ -192,7 +192,6 @@ ScriptedImporter:
     cells:
     - name: Accessory_05_Dino_Snapbacks_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -201,7 +200,6 @@ ScriptedImporter:
       spriteId: 09f62045389fd4a0a936d01e507452e3
     - name: Accessory_05_Dino_Snapbacks_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -210,7 +208,6 @@ ScriptedImporter:
       spriteId: 0451996a9499241d1a20883cefacafd4
     - name: Accessory_05_Dino_Snapbacks_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
