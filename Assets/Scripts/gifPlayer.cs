@@ -12,7 +12,7 @@ public class gifPlayer : MonoBehaviour
     private int currentFrame;
     private float timer;
 
-    void Update()
+    public void Update()
     {
         if (frames.Length == 0) return;
 
