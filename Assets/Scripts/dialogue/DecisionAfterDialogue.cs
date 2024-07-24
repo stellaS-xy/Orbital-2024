@@ -19,6 +19,8 @@ public class SceneController : MonoBehaviour
     public string[] rabbitAfterRexaDialogue; // Dialogue with rabbit after Rexa walks away
     public GameObject gifPlayerObject; // GameObject for GIF Player
 
+    public GameObject gifPlayerImage;
+
     private void Awake()
     {
         if (Instance == null)
@@ -35,6 +37,8 @@ public class SceneController : MonoBehaviour
     {
         DialogueManager.Instance.OnDialogueEnded += OnDialogueEnded;
         choiceButtonGroup.SetActive(false);
+        gifPlayerObject.SetActive(false);
+        gifPlayerImage.SetActive(false);
         Debug.Log("DecisionBox has been set inactive");
     }
 
@@ -119,6 +123,7 @@ public class SceneController : MonoBehaviour
 
         // Show GIF Player for losing signal effect
         yield return StartCoroutine(ShowLosingSignalGIF());
+        Debug.Log("GIFPLayer is called as option 2 has been selected");
 
         // After GIF, show decision box again
         DecisionManager.Instance.ShowDecision(choiceContents, new Action[] { OnOption1Selected, OnOption2Selected });
@@ -140,7 +145,9 @@ public class SceneController : MonoBehaviour
     private IEnumerator ShowLosingSignalGIF()
     {
         gifPlayerObject.SetActive(true);
+        gifPlayerImage.SetActive(true);
         gifPlayer gifPlayer = gifPlayerObject.GetComponent<gifPlayer>();
+        
         while (!gifPlayer.IsAnimationFinished())
         {
             yield return null;

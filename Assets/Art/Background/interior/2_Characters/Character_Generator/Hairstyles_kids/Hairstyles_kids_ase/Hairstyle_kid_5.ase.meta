@@ -232,7 +232,6 @@ ScriptedImporter:
     cells:
     - name: Hairstyle_kid_5_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 9
@@ -241,7 +240,6 @@ ScriptedImporter:
       spriteId: 7a1081551e7eb4aca9af88c5bc8aeaf8
     - name: Hairstyle_kid_5_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 9
@@ -250,7 +248,6 @@ ScriptedImporter:
       spriteId: 2791fc40079874202b0953399ee2fe67
     - name: Hairstyle_kid_5_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 9
@@ -259,7 +256,6 @@ ScriptedImporter:
       spriteId: 3cfca39a7a82145049efaf764e929b63
     - name: Hairstyle_kid_5_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 9
@@ -268,7 +264,6 @@ ScriptedImporter:
       spriteId: f10f8ee919e4c48bdbeb7a16f211b52c
     - name: Hairstyle_kid_5_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 9
