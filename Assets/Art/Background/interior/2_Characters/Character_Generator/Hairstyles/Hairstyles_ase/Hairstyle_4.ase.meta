@@ -272,6 +272,7 @@ ScriptedImporter:
     cells:
     - name: Hairstyle_4_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -280,6 +281,7 @@ ScriptedImporter:
       spriteId: febbb17004c054e269ba2fa41130ca30
     - name: Hairstyle_4_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -288,6 +290,7 @@ ScriptedImporter:
       spriteId: 59b76d7eaf31448fe8c74e3bc8028506
     - name: Hairstyle_4_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -296,6 +299,7 @@ ScriptedImporter:
       spriteId: a0c0c385b612b4382aba9f1aba7d4f61
     - name: Hairstyle_4_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -304,6 +308,7 @@ ScriptedImporter:
       spriteId: a8d83b29a7a1448ba9a22662e645399a
     - name: Hairstyle_4_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -312,6 +317,7 @@ ScriptedImporter:
       spriteId: 916f4072767684e4284fcb9aabe7ef3f
     - name: Hairstyle_4_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
@@ -320,6 +326,7 @@ ScriptedImporter:
       spriteId: 7e32dca9111eb42418e6d099aba2395b
     - name: Hairstyle_4_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 21
