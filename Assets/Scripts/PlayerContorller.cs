@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
 
+           
             if (input.x != 0) input.y = 0;
 
             if (input != Vector2.zero)
@@ -97,10 +98,13 @@ public class PlayerController : MonoBehaviour
     }
 
     private bool isWalkable(Vector3 targetPos) {
-        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer | interactablesLayer) != null)
+        if (Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectLayer | interactablesLayer) != null)
         {
+            
+            Debug.Log("this is not walkable");
             return false;
         }
+        Debug.Log("this is walkable");
         return true;
     }
 }

@@ -12,8 +12,9 @@ public class gifPlayer : MonoBehaviour
     private int currentFrame;
     private float timer;
 
-    void Update()
+    public void Update()
     {
+        Debug.Log("GIFPlayer update is called");
         if (frames.Length == 0) return;
 
         timer += Time.deltaTime;
