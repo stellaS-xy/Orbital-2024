@@ -212,6 +212,7 @@ ScriptedImporter:
     cells:
     - name: Accessory_01_Ladybug_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 19
@@ -220,6 +221,7 @@ ScriptedImporter:
       spriteId: 9d4812024dc1743b881a3dcd4c941938
     - name: Accessory_01_Ladybug_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 19
@@ -228,6 +230,7 @@ ScriptedImporter:
       spriteId: 2437204f7800d45c1b1b9bd608cfb92a
     - name: Accessory_01_Ladybug_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 19
@@ -236,6 +239,7 @@ ScriptedImporter:
       spriteId: 86c88349a23c74325a8f963b5c253ce2
     - name: Accessory_01_Ladybug_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 19

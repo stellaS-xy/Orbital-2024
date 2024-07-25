@@ -232,6 +232,7 @@ ScriptedImporter:
     cells:
     - name: Accessory_11_Beanie_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 26
@@ -240,6 +241,7 @@ ScriptedImporter:
       spriteId: 937b0c51dd245412887d4317c0531f31
     - name: Accessory_11_Beanie_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 26
@@ -248,6 +250,7 @@ ScriptedImporter:
       spriteId: bff4af0192d67407fbbda5d4e1dde482
     - name: Accessory_11_Beanie_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 26
@@ -256,6 +259,7 @@ ScriptedImporter:
       spriteId: 90588bdf44cab4ea096f408cb5f19d4d
     - name: Accessory_11_Beanie_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 26
@@ -264,6 +268,7 @@ ScriptedImporter:
       spriteId: 9f44c002a49794423b6c92fea40e6cc9
     - name: Accessory_11_Beanie_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 26

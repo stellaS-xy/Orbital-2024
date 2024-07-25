@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cloth : MonoBehaviour {
+public class Clothes : MonoBehaviour {
 
     // Use this for initialization
     void Start() {

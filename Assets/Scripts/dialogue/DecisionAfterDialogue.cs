@@ -17,6 +17,7 @@ public class SceneController : MonoBehaviour
 
 
     public string[] rabbitAfterRexaDialogue; // Dialogue with rabbit after Rexa walks away
+    public string[] option1SecondDialogue;
 
     public GameObject gifPlayerObject; // GameObject for GIF Player
     public GameObject gifPlayerImage;
@@ -28,6 +29,7 @@ public class SceneController : MonoBehaviour
     public GameObject rabbit; // Reference to the rabbit GameObject
 
     private bool rabbitAfterDialogueDone;
+    private bool option1FirstDialogueDone;
 
 
     private void Awake()
@@ -50,6 +52,7 @@ public class SceneController : MonoBehaviour
         gifPlayerObject.SetActive(false);
 
         rabbitAfterDialogueDone = false;
+        option1FirstDialogueDone = false;
 
         Debug.Log("DecisionBox has been set inactive");
 
@@ -123,6 +126,37 @@ public class SceneController : MonoBehaviour
         Debug.Log("HandleOption1Dialogue being called");
         yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option1Dialogue, false));
         Debug.Log("DialogueManager handled option1 dialogue");
+
+        // Wait for the dialogue to end
+        yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
+        Debug.Log("Option 1 first dialogue finished");
+
+        option1FirstDialogueDone = true;
+        choiceButtonGroup.SetActive(false);
+
+        // Trigger Rexa's walkout animation
+        rexaAnimator.SetBool("WalkOutAndDisappear", true);
+
+        // Wait for the animation to start
+        yield return new WaitUntil(() => rexaAnimator.GetCurrentAnimatorStateInfo(0).IsName("RexaWalkOut"));
+        Debug.Log("RexaWalkOut animation started");
+
+        // Wait for the animation to finish
+        yield return new WaitUntil(() => rexaAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle State"));
+        Debug.Log("RexaWalkOut animation finished");
+        rexa.SetActive(false);
+
+        // Reset the boolean parameter to prevent replaying the animation
+        rexaAnimator.SetBool("WalkOutAndDisappear", false);
+
+        // Start the conversation with Rabbit
+        yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option1SecondDialogue, false));
+        Debug.Log("Rabbit after dialogue starts to display");
+
+        // Wait for rabbitAfterRexaDialogue to finish
+        yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
+        Debug.Log("Rabbit after dialogue is done");
+
 
         // Transition to the next scene in sequence
         LoadNextSceneInSequence();
@@ -209,6 +243,7 @@ public class SceneController : MonoBehaviour
         
 
         rabbitAfterDialogueDone = true;
+
 
         if (rabbitAfterDialogueDone)
         {
