@@ -25,6 +25,7 @@ public class SceneController : MonoBehaviour
 
     public GameObject rexa; // Reference to the Rexa GameObject
     private Animator rexaAnimator;
+    public GameObject rabbit; // Reference to the rabbit GameObject
 
     private bool rabbitAfterDialogueDone;
 
@@ -138,6 +139,10 @@ public class SceneController : MonoBehaviour
 
     private IEnumerator HandleOption2Dialogue()
     {
+
+        rabbit.SetActive(false);
+        Debug.Log("Rabbit is set to inactive");
+
         Debug.Log("HandleOption2Sequence being called");
         choiceButtonGroup.SetActive(false);
 
@@ -172,6 +177,8 @@ public class SceneController : MonoBehaviour
         yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
         Debug.Log("Rabbit after dialogue is done");
 
+        
+
         // Play the losing signal GIF
         gifPlayerObject.SetActive(true);
         gifPlayerImage.SetActive(true);
@@ -202,6 +209,7 @@ public class SceneController : MonoBehaviour
         
 
         rabbitAfterDialogueDone = true;
+
         if (rabbitAfterDialogueDone)
         {
             DecisionManager.Instance.ShowDecision(choiceContents, new Action[] { OnOption1Selected, OnOption2Selected });

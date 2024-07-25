@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 5126095049605931484, guid: 303b64d7dbf644d01b5999034ca73824, type: 3}
       propertyPath: gifImage
       value: 
-      objectReference: {fileID: 879735604}
+      objectReference: {fileID: 601685742}
     - target: {fileID: 6344145664033616658, guid: 303b64d7dbf644d01b5999034ca73824, type: 3}
       propertyPath: m_Name
       value: GIFPlayer
@@ -463,7 +463,7 @@ PrefabInstance:
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: faceImage
       value: 
-      objectReference: {fileID: 879735604}
+      objectReference: {fileID: 429043591}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: rabbitFace
       value: 
@@ -24861,6 +24861,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &429043591 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2314979246292894203, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
+  m_PrefabInstance: {fileID: 879735602}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &443108718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25055,6 +25066,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5933355240145833105, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
   m_PrefabInstance: {fileID: 834119772}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &601685742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1199800979320420067, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
+  m_PrefabInstance: {fileID: 834119772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601685738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772591092
 GameObject:
   m_ObjectHideFlags: 0
@@ -32679,6 +32701,7 @@ MonoBehaviour:
   gifPlayerObject: {fileID: 879829693}
   gifPlayerImage: {fileID: 601685738}
   rexa: {fileID: 1248879010}
+  rabbit: {fileID: 994754343}
 --- !u!4 &796595508
 Transform:
   m_ObjectHideFlags: 0
@@ -32702,6 +32725,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 879735603}
     m_Modifications:
+    - target: {fileID: 1199800979320420067, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199800979320420067, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199800979320420067, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199800979320420067, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5933355240145833105, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -32740,7 +32779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5933355240145833105, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.731152
+      value: 3.1066856
       objectReference: {fileID: 0}
     - target: {fileID: 5933355240145833105, guid: cdf2defe3ecf34767bc8fec49493dfd3, type: 3}
       propertyPath: m_LocalScale.z
@@ -32895,6 +32934,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6517024627037793414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517024627037793414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517024627037793414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517024627037793414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519891028962563235, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
+      propertyPath: m_Name
+      value: transitionImage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -32911,17 +32970,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 746352213167885778, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
   m_PrefabInstance: {fileID: 879735602}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &879735604 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6517024627037793414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
-  m_PrefabInstance: {fileID: 879735602}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &879735605 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 377729718452133414, guid: f3d34f17e704a47f3bc6233b9c61fc2f, type: 3}
@@ -32974,6 +33022,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6344145664033616658, guid: 303b64d7dbf644d01b5999034ca73824, type: 3}
   m_PrefabInstance: {fileID: 230933931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994754343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5299242855630409375, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+  m_PrefabInstance: {fileID: 443108718}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1248879010
 GameObject:
@@ -33589,6 +33642,191 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1687767965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: faceImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 72cbfb2431ee6472d8681e2bd4a4a565, type: 3}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.size
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: hasButtonInitially
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: n- Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: '"Phew, we finally made it. That was quite the journey."
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: n- Sammy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: " \"Oh, Truth, don\u2019t exaggerate. Sure, Rexa\u2019s place is a bit
+        tricky to find, but with the map, it was a breeze.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: n- Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: "\"But the way here was creepy! Come on, Sammy, I know you heard those
+        weird noises. Don\u2019t tell me you didn\u2019t hear anything strange?\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: n- Sammy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[7]
+      value: '"What noises?"
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[8]
+      value: n- Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[9]
+      value: " \"I don\u2019t know, but there were strange sounds and a buzzing noise,
+        like electricity. It kept getting closer and then farther away.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[10]
+      value: n- Sammy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[11]
+      value: '"Are you feeling okay, Truth? All I heard was the wind and birds singing."
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[12]
+      value: n- Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[13]
+      value: "\"...Really? You didn\u2019t hear anything else?\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[14]
+      value: n- Sammy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[15]
+      value: "\"Maybe you\u2019re imagining things. Are you sure you\u2019re not
+        just tired?\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[16]
+      value: n- Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[17]
+      value: "\"I guess I might be. I\u2019ve been so stressed about the party and
+        haven\u2019t been sleeping well. Anyway, let\u2019s knock on Rexa\u2019s
+        door.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[18]
+      value: n- Sammy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[19]
+      value: " \"Just make sure you get some rest tonight after the party, okay?
+        I don\u2019t want you to wear yourself out.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[20]
+      value: n- Truth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[21]
+      value: "\"I promise, Sammy. I\u2019ll take care of myself. Don\u2019t worry.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[22]
+      value: n- Sammy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: lines.Array.data[23]
+      value: '"Alright. So, how do you want to approach Rexa when we see her?"
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299242855630409375, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_Name
+      value: rabbit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492741110703368227, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3176520325752923094, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ff6831646164a04aff308ca80d3656, type: 3}
 --- !u!1 &1784571120
 GameObject:
   m_ObjectHideFlags: 0
@@ -37689,6 +37927,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 37816292}
   - {fileID: 443108718}
+  - {fileID: 1687767965}
   - {fileID: 1398180660}
   - {fileID: 320639137}
   - {fileID: 879735602}
