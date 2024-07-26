@@ -12,7 +12,7 @@ public class DialogueManager: MonoBehaviour
     //[SerializeField] Button option1Button, option2Button; // Buttons for options
 
     [Header("Face Image")]
-    public Sprite rabbitFace, bearFace, foxFace, lionFace, narratorFace;
+    public Sprite rabbitFace, bearFace, foxFace, lionFace, narratorFace, elephantFace;
 
     [TextArea(1,3)]
     public string[] dialogueLines;
@@ -140,7 +140,12 @@ public class DialogueManager: MonoBehaviour
             else if (dialogueLines[currentLine].Contains("Finn"))
             {
                 faceImage.sprite = foxFace;
-                Debug.Log("Setting face to default (Fox)");
+                Debug.Log("Setting face to Finn (Fox)");
+            }
+            else if (dialogueLines[currentLine].Contains("Hugo"))
+            {
+                faceImage.sprite = elephantFace;
+                Debug.Log("Setting face to Hugo (Elephant)");
             }
             else
             {

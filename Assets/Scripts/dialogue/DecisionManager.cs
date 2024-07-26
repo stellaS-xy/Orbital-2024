@@ -37,13 +37,12 @@ public class DecisionManager : MonoBehaviour
 
     //show the decision making UI
     //choiceNum: number of options
-    
+
     public void ShowDecision(string[] choiceContents, Action[] actions)
     {
-        
+        Debug.Log("Show decision from decision manager is called");
         choiceButtonGroup.SetActive(true);
         choiceActions = actions;
-
 
         for (int i = 0; i < choiceUIGos.Length; i++)
         {
@@ -57,6 +56,11 @@ public class DecisionManager : MonoBehaviour
                 if (actions[i] != null)
                 {
                     choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(index));
+                    Debug.Log($"Button {i} is interactable and set up correctly.");
+                }
+                else
+                {
+                    Debug.Log($"Button {i} is not interactable.");
                 }
             }
             else
@@ -66,15 +70,13 @@ public class DecisionManager : MonoBehaviour
         }
     }
 
-
-    
-
-
     private void OnChoiceSelected(int index)
     {
+        Debug.Log($"Choice {index} selected.");
         choiceButtonGroup.SetActive(false);
         choiceActions[index]?.Invoke();
     }
+
 
     public void CloseChoiceUI()
     {
