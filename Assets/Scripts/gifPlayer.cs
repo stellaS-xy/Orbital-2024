@@ -11,23 +11,36 @@ public class gifPlayer : MonoBehaviour
 
     private int currentFrame;
     private float timer;
+    private bool isPlaying;
+
+    private void OnEnable()
+    {
+        currentFrame = 0;
+        timer = 0;
+        isPlaying = true;
+        gifImage.sprite = frames[currentFrame];
+    }
 
     public void Update()
     {
-        //Debug.Log("GIFPlayer update is called");
-        if (frames.Length == 0) return;
+        if (!isPlaying || frames.Length == 0) return;
 
         timer += Time.deltaTime;
         if (timer >= 1f / frameRate)
         {
             timer -= 1f / frameRate;
-            currentFrame = (currentFrame + 1) % frames.Length;
+            currentFrame++;
+            if (currentFrame >= frames.Length)
+            {
+                currentFrame = frames.Length - 1;
+                isPlaying = false;
+            }
             gifImage.sprite = frames[currentFrame];
         }
     }
 
     public bool IsAnimationFinished()
     {
-        return currentFrame == frames.Length - 1;
+        return !isPlaying;
     }
 }

@@ -110,8 +110,8 @@ public class Chapter4SceneController : MonoBehaviour
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option2Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
-        // Load scene with index 11
-        SceneManager.LoadScene(11);
+        // Load scene with index 12
+        SceneManager.LoadScene(12);
     }
 
     private IEnumerator HandleOption3Dialogue()
@@ -121,8 +121,8 @@ public class Chapter4SceneController : MonoBehaviour
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option3Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
-        // Load scene with index 11
-        SceneManager.LoadScene(11);
+        // Load scene with index 14
+        SceneManager.LoadScene(14);
     }
 
     
