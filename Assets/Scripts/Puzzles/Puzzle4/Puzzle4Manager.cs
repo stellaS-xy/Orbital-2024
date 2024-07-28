@@ -101,8 +101,9 @@ public class Puzzle4Manager : MonoBehaviour
     {
         if (hasGameFinished) 
         {
-            // Load the next scene after a short delay
-            Invoke("LoadNextSceneInSequence", 3f); 
+            PuzzleManager.Instance.SetPuzzleCompleted("Puzzle4");
+            // Scene switch back the main game after completing the puzzle
+            SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
             return;
         }
 

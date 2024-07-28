@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Puzzle5Manager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Puzzle5Manager : MonoBehaviour
     public int correctAnswer = 21;
     private List<string> messages;
     private System.Random random;
-    private SceneLoader sceneLoader;
+    //private SceneLoader sceneLoader;
 
     
 
@@ -20,7 +21,7 @@ public class Puzzle5Manager : MonoBehaviour
     void Start()
     {
         // Find the SceneLoader in the scene
-        sceneLoader = FindObjectOfType<SceneLoader>(); 
+        //sceneLoader = FindObjectOfType<SceneLoader>(); 
         UpdateHintMessage("What will be the answer?");
         // Initialize a lists of hint messages
         messages = new List<string>
@@ -51,8 +52,9 @@ public class Puzzle5Manager : MonoBehaviour
             if (playerAnswer == correctAnswer) 
             {
                 UpdateHintMessage("Congrats!");
-                // Load the next scene after a short delay
-                Invoke("LoadNextSceneInSequence", 3f); 
+                PuzzleManager.Instance.SetPuzzleCompleted("Puzzle5");
+                // Scene switch back the main game after completing the puzzle
+                SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
             } 
             else
             {
@@ -68,6 +70,7 @@ public class Puzzle5Manager : MonoBehaviour
         }
     }
    
+    /*
     private void LoadNextSceneInSequence()
     {
         if (sceneLoader != null)
@@ -79,4 +82,5 @@ public class Puzzle5Manager : MonoBehaviour
             Debug.LogError("SceneLoader not found in the scene.");
         }
     }
+    */
 }

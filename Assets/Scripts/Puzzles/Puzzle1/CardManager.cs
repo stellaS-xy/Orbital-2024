@@ -89,7 +89,8 @@ public class CardManager : MonoBehaviour
     {
         if (_gameover)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            PuzzleManager.Instance.SetPuzzleCompleted("Puzzle1");
+            SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
 

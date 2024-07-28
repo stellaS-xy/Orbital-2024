@@ -86,6 +86,7 @@ public class ClueManager : MonoBehaviour
         rabbit.showButton();
         directionCanvas.SetActive(false);
         arrow.SetActive(true);
+        PuzzleManager.Instance.SetPuzzleCompleted("Puzzle2");
         
         
     }

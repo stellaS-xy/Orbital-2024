@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 1262466451471028329}
   - component: {fileID: 818181743118214831}
   - component: {fileID: 6380691812319658501}
+  - component: {fileID: 5410602668938353333}
   - component: {fileID: 4870290371733473673}
   m_Layer: 5
   m_Name: exitButton
@@ -609,10 +610,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4870290371733473673}
-        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
-        m_MethodName: OnExitGame
-        m_Mode: 1
+      - m_Target: {fileID: 5410602668938353333}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: StopCoroutine
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -621,6 +622,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5410602668938353333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504953960730157958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622834589abb04905a26667f03bb0233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Menu
 --- !u!114 &4870290371733473673
 MonoBehaviour:
   m_ObjectHideFlags: 0

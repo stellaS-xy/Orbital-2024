@@ -205,7 +205,7 @@ public class SceneController : MonoBehaviour
 
 
         // Transition to the next scene in sequence
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
            
     }
 

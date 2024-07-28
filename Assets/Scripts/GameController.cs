@@ -17,6 +17,9 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         state = GameState.FreeRoam;
+        
+        // Mark this chapter as started
+        //ChapterManager.Instance.SetChapterStarted("Chapter 1-1");
 
     }
     

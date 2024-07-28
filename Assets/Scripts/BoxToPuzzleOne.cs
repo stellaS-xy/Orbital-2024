@@ -19,7 +19,7 @@ public class BoxToPuzzleOne : MonoBehaviour
 
     private void Start()
     {
-        GameObject.DontDestroyOnLoad(this.canvas);
+        //GameObject.DontDestroyOnLoad(this.canvas);
        
     }
 
@@ -48,40 +48,24 @@ public class BoxToPuzzleOne : MonoBehaviour
         }
     }
 
-    public IEnumerator LoadScene()
+    private IEnumerator LoadScene()
     {
-        
         Debug.Log("faded out");
         animator.SetBool("FadeIn", false);
         animator.SetBool("FadeOut", true);
-        
-
 
         yield return new WaitForSeconds(2);
-        
 
-        AsyncOperation async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        async.completed += OnLoadedScene;
+        // Use SceneTransitionManager to load the next scene
+        SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    private void OnLoadedScene(AsyncOperation obj)
-    {
-        
-        Debug.Log("Animator: FadeIn set to true");
-
-        animator.SetBool("FadeIn", true);
-        animator.SetBool("FadeOut", false);
-
-
-    }
-
-   
     private void Update()
     {
         if (isEntered && Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("On triggered to load next scene");
-                StartCoroutine(LoadScene());
-            }
+        {
+            Debug.Log("On triggered to load next scene");
+            StartCoroutine(LoadScene());
+        }
     }
 }

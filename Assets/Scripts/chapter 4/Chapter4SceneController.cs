@@ -31,6 +31,9 @@ public class Chapter4SceneController : MonoBehaviour
 
     private void Start()
     {
+        //Mark this chapter as started
+        //ChapterManager.Instance.SetChapterStarted("chapter 4");
+
         gifPlayer = gifPlayerObject.GetComponent<gifPlayer>();
         gifPlayerObject.SetActive(false);
         gifImage.SetActive(false);
@@ -125,8 +128,8 @@ public class Chapter4SceneController : MonoBehaviour
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option1Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
-        // Load scene with index 11
-        SceneManager.LoadScene(11);
+        // Load scene with index 12
+        SceneTransitionManager.Instance.TransitionToScene(12);
     }
 
     private IEnumerator HandleOption2Dialogue()
@@ -143,8 +146,8 @@ public class Chapter4SceneController : MonoBehaviour
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option2Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
-        // Load scene with index 12
-        SceneManager.LoadScene(12);
+        // Load scene with index 13
+        SceneTransitionManager.Instance.TransitionToScene(13);
     }
 
     private IEnumerator HandleOption3Dialogue()
@@ -157,7 +160,7 @@ public class Chapter4SceneController : MonoBehaviour
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option3Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
-        // Load scene with index 14
-        SceneManager.LoadScene(14);
+        // Load scene with index 15
+        SceneTransitionManager.Instance.TransitionToScene(15);
     }
 }

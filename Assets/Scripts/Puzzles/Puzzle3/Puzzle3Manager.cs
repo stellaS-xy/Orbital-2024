@@ -79,8 +79,9 @@ public class Puzzle3Manager : MonoBehaviour
             // Check for completion after each move
             if (!shuffling && CheckCompletion()) {
                 shuffling = true;
+                PuzzleManager.Instance.SetPuzzleCompleted("Puzzle3");
                 // Scene switch back the main game after completing the puzzle
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 

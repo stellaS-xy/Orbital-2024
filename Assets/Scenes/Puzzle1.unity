@@ -809,7 +809,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_TargetDisplay: 0
 --- !u!224 &959220705
 RectTransform:
@@ -983,6 +983,8 @@ GameObject:
   - component: {fileID: 1173205311}
   - component: {fileID: 1173205310}
   - component: {fileID: 1173205313}
+  - component: {fileID: 1173205314}
+  - component: {fileID: 1173205315}
   m_Layer: 5
   m_Name: Skip
   m_TagString: Untagged
@@ -1116,6 +1118,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938df01c8a17b4fd6a953a4b56576f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  persistentSceneName: Persistent
+--- !u!114 &1173205314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173205307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f7b9106725f45f2b43acf3b142ecb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skipButton: {fileID: 1173205310}
+  puzzleName: Puzzle1
+--- !u!114 &1173205315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173205307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622834589abb04905a26667f03bb0233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: chapter 1-2
 --- !u!1 &1362072442
 GameObject:
   m_ObjectHideFlags: 0

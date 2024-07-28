@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Puzzle2Deduction : MonoBehaviour
 {
@@ -9,11 +11,11 @@ public class Puzzle2Deduction : MonoBehaviour
     public Button option1Button;
     public Button option2Button;
     public Button option3Button;
-    private SceneLoader sceneLoader;
+    //private SceneLoader sceneLoader;
 
     private void Start()
     {
-        sceneLoader = FindObjectOfType<SceneLoader>(); // Find the SceneLoader in the scene
+        //sceneLoader = FindObjectOfType<SceneLoader>(); // Find the SceneLoader in the scene
         option1Button.onClick.AddListener(() => SelectOption(1));
         option2Button.onClick.AddListener(() => SelectOption(2));
         option3Button.onClick.AddListener(() => SelectOption(3));
@@ -32,16 +34,20 @@ public class Puzzle2Deduction : MonoBehaviour
                 break;
             case 3:
                 DisplayDialogue("Yes, it's Rexa! Why is he breaking into my house? Nothing has been stolen, and he usually doesn't act this way! Even if it was him, why was Finn's fur left in the fridge?");
-                Invoke("LoadNextSceneInSequence", 3f); // Load the next scene after a short delay
+                SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
         }
     }
+
 
     private void DisplayDialogue(string dialogue)
     {
         dialogueText.text = dialogue;
     }
 
+    
+
+    /*
     private void LoadNextSceneInSequence()
     {
         if (sceneLoader != null)
@@ -51,23 +57,6 @@ public class Puzzle2Deduction : MonoBehaviour
         else
         {
             Debug.LogError("SceneLoader not found in the scene.");
-        }
-    }
-
-    /*
-    private void LoadNextSceneInSequence()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
-
-        // Ensure the next scene index is within the valid range
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            Debug.LogError("No more scenes in build settings to load.");
         }
     }
     */

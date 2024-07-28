@@ -172,7 +172,7 @@ public class SceneStartDialogue : MonoBehaviour
         Debug.Log("DialogueManager handled option2 dialogue");
 
         // Transition to the next scene in sequence
-        LoadNextSceneInSequence();
+        SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void OnOption3Selected()
@@ -198,21 +198,5 @@ public class SceneStartDialogue : MonoBehaviour
         Debug.Log("DialogueManager handled option3 dialogue");
 
         // No further actions specified for option 3, add logic here if needed
-    }
-
-    private void LoadNextSceneInSequence()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
-
-        // Ensure the next scene index is within the valid range
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            Debug.LogError("No more scenes in build settings to load.");
-        }
     }
 }
