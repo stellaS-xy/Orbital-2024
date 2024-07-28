@@ -443,7 +443,7 @@ PrefabInstance:
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: foxFace
       value: 
-      objectReference: {fileID: 21300000, guid: be8cbd1ec08a14a87a7833cd5b2294da, type: 3}
+      objectReference: {fileID: 21300000, guid: 8b43510ae69e54f60abbafe9705c66da, type: 3}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: nameBox
       value: 
@@ -451,11 +451,11 @@ PrefabInstance:
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: bearFace
       value: 
-      objectReference: {fileID: 21300000, guid: bfd96fa77953d4edd93b8a0b8ee90266, type: 3}
+      objectReference: {fileID: 21300000, guid: a621865d1683445018f2ebd68abc13ba, type: 3}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: lionFace
       value: 
-      objectReference: {fileID: 21300000, guid: 95b62e6998adb41589870d552eaf7214, type: 3}
+      objectReference: {fileID: 21300000, guid: b8dd5047db67640bba5f96edd7edbe36, type: 3}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: nameText
       value: 
@@ -467,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: rabbitFace
       value: 
-      objectReference: {fileID: 21300000, guid: 72cbfb2431ee6472d8681e2bd4a4a565, type: 3}
+      objectReference: {fileID: 21300000, guid: 8bc90a8abe5af432fbf79cd65122f447, type: 3}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: decisionBox
       value: 
@@ -481,9 +481,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 879735607}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
+      propertyPath: elephantFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d50b6577ad6c54602936849c993376db, type: 3}
+    - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: narratorFace
       value: 
-      objectReference: {fileID: 21300000, guid: 18bd54ffe25644b28baf0fc2875a7dfa, type: 3}
+      objectReference: {fileID: 21300000, guid: 3d194d861c5d74d3dac61ce915d157b3, type: 3}
     - target: {fileID: 3019932067046428544, guid: a64700e638701458cacc7037c1700f8a, type: 3}
       propertyPath: instructionBox
       value: 
