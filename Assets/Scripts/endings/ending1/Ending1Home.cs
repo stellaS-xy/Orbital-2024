@@ -37,7 +37,7 @@ public class EndingSceneController : MonoBehaviour
         yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
 
         // Transition to the next scene
-        LoadNextSceneInSequence();
+        SceneManager.LoadScene(0);
     }
 
     private IEnumerator FadeInCG()
@@ -58,18 +58,5 @@ public class EndingSceneController : MonoBehaviour
         cgImage.color = color;
     }
 
-    private void LoadNextSceneInSequence()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
-
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(nextSceneIndex);
-        }
-        else
-        {
-            Debug.LogError("No more scenes in build settings to load.");
-        }
-    }
+    
 }

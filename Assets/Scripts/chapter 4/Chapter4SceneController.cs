@@ -17,11 +17,17 @@ public class Chapter4SceneController : MonoBehaviour
     public string[] choiceContents;
     public GameObject choiceButtonGroup;
 
-   
     public GameObject optionDialogue;
 
     private bool option1Selected = false;
     private bool option2Selected = false;
+
+    private void Awake()
+    {
+        // Load player choices from PlayerPrefs
+        option1Selected = PlayerPrefs.GetInt("Option1Selected", 0) == 1;
+        option2Selected = PlayerPrefs.GetInt("Option2Selected", 0) == 1;
+    }
 
     private void Start()
     {
@@ -49,7 +55,8 @@ public class Chapter4SceneController : MonoBehaviour
         gifPlayerObject.SetActive(false);
         gifImage.SetActive(false);
 
-        Debug.Log("gif has been played");
+        Debug.Log("GIF has been played");
+        choiceButtonGroup.SetActive(true);
 
         // Show the choices
         ShowChoices();
@@ -58,43 +65,62 @@ public class Chapter4SceneController : MonoBehaviour
     private void ShowChoices()
     {
         Debug.Log("Show Choices is called");
-        Action[] actions = new Action[choiceContents.Length];
-        actions[0] = OnOption1Selected;
-        actions[1] = OnOption2Selected;
-        actions[2] = option1Selected && option2Selected ? (Action)OnOption3Selected : null;
+        if (DecisionManager.Instance != null)
+        {
+            Action[] actions = new Action[choiceContents.Length];
+            actions[0] = OnOption1Selected;
+            actions[1] = OnOption2Selected;
+            actions[2] = option1Selected && option2Selected ? (Action)OnOption3Selected : null;
 
-        DecisionManager.Instance.ShowDecision(choiceContents, actions);
-        Debug.Log("Decision Manager is called from chapter 4 scene controller");
+            DecisionManager.Instance.ShowDecision(choiceContents, actions);
+            Debug.Log("Decision Manager is called from Chapter 4 Scene Controller");
+        }
+        else
+        {
+            Debug.LogError("DecisionManager instance not found.");
+        }
     }
 
     private void OnOption1Selected()
     {
-        choiceButtonGroup.SetActive(false);
+        if (choiceButtonGroup != null)
+        {
+            choiceButtonGroup.SetActive(false);
+        }
         Debug.Log("Option 1 selected");
         StartCoroutine(HandleOption1Dialogue());
     }
 
-
     private void OnOption2Selected()
     {
-        choiceButtonGroup.SetActive(false);
+        if (choiceButtonGroup != null)
+        {
+            choiceButtonGroup.SetActive(false);
+        }
         Debug.Log("Option 2 selected");
         StartCoroutine(HandleOption2Dialogue());
     }
 
-
     private void OnOption3Selected()
     {
-        choiceButtonGroup.SetActive(false);
+        if (choiceButtonGroup != null)
+        {
+            choiceButtonGroup.SetActive(false);
+        }
         Debug.Log("Option 3 selected");
         StartCoroutine(HandleOption3Dialogue());
     }
 
-
     private IEnumerator HandleOption1Dialogue()
     {
-        optionDialogue.SetActive(true);
+        option1Selected = true;
+        PlayerPrefs.SetInt("Option1Selected", 1); // Save the choice
+        PlayerPrefs.Save();
 
+        if (optionDialogue != null)
+        {
+            optionDialogue.SetActive(true);
+        }
         Debug.Log("HandleOption1Dialogue being called");
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option1Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
@@ -105,8 +131,15 @@ public class Chapter4SceneController : MonoBehaviour
 
     private IEnumerator HandleOption2Dialogue()
     {
-        optionDialogue.SetActive(true);
-        Debug.Log("HandleOption1Dialogue being called");
+        option2Selected = true;
+        PlayerPrefs.SetInt("Option2Selected", 1); // Save the choice
+        PlayerPrefs.Save();
+
+        if (optionDialogue != null)
+        {
+            optionDialogue.SetActive(true);
+        }
+        Debug.Log("HandleOption2Dialogue being called");
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option2Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
@@ -116,14 +149,15 @@ public class Chapter4SceneController : MonoBehaviour
 
     private IEnumerator HandleOption3Dialogue()
     {
-        optionDialogue.SetActive(true);
-        Debug.Log("HandleOption1Dialogue being called");
+        if (optionDialogue != null)
+        {
+            optionDialogue.SetActive(true);
+        }
+        Debug.Log("HandleOption3Dialogue being called");
         yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option3Dialogue));
         yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
 
         // Load scene with index 14
         SceneManager.LoadScene(14);
     }
-
-    
 }
