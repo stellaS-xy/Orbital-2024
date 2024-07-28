@@ -25,7 +25,8 @@ public class DecisionManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+         
+
             keyStates = new Dictionary<string, bool>();
             option1Completed = false;
         }
@@ -33,6 +34,7 @@ public class DecisionManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+      
     }
 
     //show the decision making UI
@@ -40,9 +42,20 @@ public class DecisionManager : MonoBehaviour
 
     public void ShowDecision(string[] choiceContents, Action[] actions)
     {
+        
         Debug.Log("Show decision from decision manager is called");
-        choiceButtonGroup.SetActive(true);
-        choiceActions = actions;
+        if (choiceButtonGroup != null)
+        {
+            choiceButtonGroup.SetActive(true);
+            choiceActions = actions;
+        }
+        else
+        {
+            Debug.Log("choiceButtonGroup is null");
+        }
+
+
+        
 
         for (int i = 0; i < choiceUIGos.Length; i++)
         {

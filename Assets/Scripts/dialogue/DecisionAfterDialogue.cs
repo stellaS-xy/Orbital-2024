@@ -12,6 +12,9 @@ public class SceneController : MonoBehaviour
     public string[] option1Dialogue;
     public string[] option2Dialogue;
     public string[] option3Dialogue;
+
+    public string[] initialDialogue; // Initial dialogue at the start
+
     public string requiredKeyForOption2;
     public string requiredKeyForOption3;
 
@@ -26,10 +29,17 @@ public class SceneController : MonoBehaviour
 
     public GameObject rexa; // Reference to the Rexa GameObject
     private Animator rexaAnimator;
+    public GameObject rexaBase;
     public GameObject rabbit; // Reference to the rabbit GameObject
 
+    public GameObject Canvas;
+
     private bool rabbitAfterDialogueDone;
-    private bool option1FirstDialogueDone;
+    
+
+    public int nextSceneIndex;
+
+   
 
 
     private void Awake()
@@ -37,22 +47,26 @@ public class SceneController : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+           
         }
         else
         {
             Destroy(gameObject);
         }
+
+      
     }
+
 
     private void Start()
     {
-        DialogueManager.Instance.OnDialogueEnded += OnDialogueEnded;
+        
         choiceButtonGroup.SetActive(false);
         gifPlayerImage.SetActive(false);
         gifPlayerObject.SetActive(false);
-
+        rexaBase.SetActive(false);
         rabbitAfterDialogueDone = false;
-        option1FirstDialogueDone = false;
+   
 
         Debug.Log("DecisionBox has been set inactive");
 
@@ -71,19 +85,23 @@ public class SceneController : MonoBehaviour
             gifPlayerObject.SetActive(false); // Initially hide the gif player
         }
 
+        StartCoroutine(SceneCoroutine());
+
     }
 
-    private void OnDestroy()
-    {
-        DialogueManager.Instance.OnDialogueEnded -= OnDialogueEnded;
-    }
+    
 
-    private void OnDialogueEnded()
+    private IEnumerator SceneCoroutine()
     {
-        
+        yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(initialDialogue, false));
+        yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
+
         ShowDecision();
-        
     }
+
+
+
+
 
     private void ShowDecision()
     {
@@ -123,6 +141,22 @@ public class SceneController : MonoBehaviour
 
     private IEnumerator HandleOption1Dialogue()
     {
+        rexaBase.SetActive(true);
+
+        rexa.SetActive(true);
+        Debug.Log("Rexa set to active");
+
+        rexaAnimator.enabled = false;
+        rexa.transform.position = new Vector3(4.89f, -0.88f, 0f);
+        Debug.Log("Rexa's position set to (4.89, -0.88, 0)");
+
+        // Log the new position of Rexa after setting it
+        Debug.Log("Rexa's new position: " + rexa.transform.position);
+
+        rexaAnimator.enabled = true;
+        Debug.Log("Rexa's Animator re-enabled");
+
+
         Debug.Log("HandleOption1Dialogue being called");
         yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option1Dialogue, false));
         Debug.Log("DialogueManager handled option1 dialogue");
@@ -131,13 +165,25 @@ public class SceneController : MonoBehaviour
         yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
         Debug.Log("Option 1 first dialogue finished");
 
-        option1FirstDialogueDone = true;
+       
         choiceButtonGroup.SetActive(false);
+
+        rexaAnimator.Play("Idle State");
+        Debug.Log("Rexa's animation state set to Idle");
 
         // Trigger Rexa's walkout animation
         rexaAnimator.SetBool("WalkOutAndDisappear", true);
+        Debug.Log("RexaWalkOutandDisappear set to true");
+
+        // Log the current state and parameter value
+        var currentState = rexaAnimator.GetCurrentAnimatorStateInfo(0);
+        bool walkOutAndDisappearValue = rexaAnimator.GetBool("WalkOutAndDisappear");
+        Debug.Log($"Current Animation State: {currentState.fullPathHash}");
+        Debug.Log($"WalkOutAndDisappear Parameter Value: {walkOutAndDisappearValue}");
+
 
         // Wait for the animation to start
+        rexaBase.SetActive(false);
         yield return new WaitUntil(() => rexaAnimator.GetCurrentAnimatorStateInfo(0).IsName("RexaWalkOut"));
         Debug.Log("RexaWalkOut animation started");
 
@@ -159,7 +205,8 @@ public class SceneController : MonoBehaviour
 
 
         // Transition to the next scene in sequence
-        LoadNextSceneInSequence();
+        SceneManager.LoadScene(nextSceneIndex);
+           
     }
 
     private void OnOption2Selected()
@@ -230,11 +277,10 @@ public class SceneController : MonoBehaviour
         // Log the current position of Rexa before setting the new position
         Debug.Log("Rexa's current position: " + rexa.transform.position);
 
-        // Disable the Animator component to prevent it from interfering with setting the position
-        rexaAnimator.enabled = false;
+        
 
         // Set Rexa's position
-        rexa.transform.position = new Vector3(4.89f, -1.29f, 0f);
+        rexa.transform.position = new Vector3(4.89f, -0.88f, 0f);
         Debug.Log("Rexa's position set to (4.89, -1.29, 0)");
 
         // Log the new position of Rexa after setting it
@@ -286,7 +332,7 @@ public class SceneController : MonoBehaviour
         gifPlayerObject.SetActive(false);
     }
 
-    */
+    
 
 
     private void LoadNextSceneInSequence()
@@ -304,6 +350,7 @@ public class SceneController : MonoBehaviour
             Debug.LogError("No more scenes in build settings to load.");
         }
     }
+    */
 
-   
+
 }
