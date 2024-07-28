@@ -24,11 +24,9 @@ public class Chapter4SceneController : MonoBehaviour
 
     private void Awake()
     {
-        if (choiceButtonGroup != null)
-        {
-            
-        }
-       
+        // Load player choices from PlayerPrefs
+        option1Selected = PlayerPrefs.GetInt("Option1Selected", 0) == 1;
+        option2Selected = PlayerPrefs.GetInt("Option2Selected", 0) == 1;
     }
 
     private void Start()
@@ -116,6 +114,9 @@ public class Chapter4SceneController : MonoBehaviour
     private IEnumerator HandleOption1Dialogue()
     {
         option1Selected = true;
+        PlayerPrefs.SetInt("Option1Selected", 1); // Save the choice
+        PlayerPrefs.Save();
+
         if (optionDialogue != null)
         {
             optionDialogue.SetActive(true);
@@ -131,6 +132,9 @@ public class Chapter4SceneController : MonoBehaviour
     private IEnumerator HandleOption2Dialogue()
     {
         option2Selected = true;
+        PlayerPrefs.SetInt("Option2Selected", 1); // Save the choice
+        PlayerPrefs.Save();
+
         if (optionDialogue != null)
         {
             optionDialogue.SetActive(true);
