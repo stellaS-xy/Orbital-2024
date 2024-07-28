@@ -192,7 +192,6 @@ ScriptedImporter:
     cells:
     - name: Accessory_16_Monocle_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 21
@@ -201,7 +200,6 @@ ScriptedImporter:
       spriteId: edc894fb4415b407185832b858a8332f
     - name: Accessory_16_Monocle_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 21
@@ -210,7 +208,6 @@ ScriptedImporter:
       spriteId: c44eacdf009e84653810e792c5874f71
     - name: Accessory_16_Monocle_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 21

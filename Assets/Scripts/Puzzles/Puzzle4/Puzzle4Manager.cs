@@ -45,6 +45,7 @@ public class Puzzle4Manager : MonoBehaviour
             }
         }
 
+        sceneLoader = FindObjectOfType<SceneLoader>();
         SpawnLevel();
     }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Puzzle5Manager : MonoBehaviour
 {
@@ -25,10 +26,10 @@ public class Puzzle5Manager : MonoBehaviour
         messages = new List<string>
         {
             "Oops! Wrong answer :/",
-            "The given numbers are all below 30...",
+            "TRUTH: It seems the given numbers are all below 30...",
             "Try Again!",
-            "How about convert the numbers to something else...",
-            "I think it's almost there..."
+            "TRUTH: I think it's almost there...",
+            "TRUTH: How about convert the numbers to something else...",
         };
         
         // Initialize the random number generator
@@ -53,7 +54,7 @@ public class Puzzle5Manager : MonoBehaviour
                 // Load the next scene after a short delay
                 Invoke("LoadNextSceneInSequence", 3f); 
             } 
-            else 
+            else
             {
                 // Select a random message from the list
                 int index = random.Next(messages.Count);

@@ -252,7 +252,6 @@ ScriptedImporter:
     cells:
     - name: Accessory_04_Snapbacks_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -261,7 +260,6 @@ ScriptedImporter:
       spriteId: e8e5fea7650a54ceb9aaafb96c64be98
     - name: Accessory_04_Snapbacks_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -270,7 +268,6 @@ ScriptedImporter:
       spriteId: 9c7d56fd9d4f84a7eac62a9ab0770ab7
     - name: Accessory_04_Snapbacks_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -279,7 +276,6 @@ ScriptedImporter:
       spriteId: c720bd39512654c9dabb244d97ed876b
     - name: Accessory_04_Snapbacks_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -288,7 +284,6 @@ ScriptedImporter:
       spriteId: 625b5ab6878d24e72b6a1007b391ae07
     - name: Accessory_04_Snapbacks_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -297,7 +292,6 @@ ScriptedImporter:
       spriteId: 396a87d9f7e2e45c1833c8fa3bff5c77
     - name: Accessory_04_Snapbacks_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
