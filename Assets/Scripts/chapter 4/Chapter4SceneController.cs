@@ -108,12 +108,17 @@ public class Chapter4SceneController : MonoBehaviour
 
     private void OnOption3Selected()
     {
+        
         if (choiceButtonGroup != null)
         {
             choiceButtonGroup.SetActive(false);
         }
+
         Debug.Log("Option 3 selected");
-        StartCoroutine(HandleOption3Dialogue());
+
+        //StartCoroutine(HandleOption3Dialogue());
+
+        SceneTransitionManager.Instance.TransitionToScene(15);
     }
 
     private IEnumerator HandleOption1Dialogue()
@@ -152,14 +157,19 @@ public class Chapter4SceneController : MonoBehaviour
         SceneTransitionManager.Instance.TransitionToScene(13);
     }
 
-    private IEnumerator HandleOption3Dialogue()
-    {
-        gifImage.SetActive(true);
-        Debug.Log("HandleOption3Dialogue being called");
-        yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option3Dialogue, true));
-        yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
+    /*
+   private IEnumerator HandleOption3Dialogue()
+   {
 
-        // Load scene with index 15
-        SceneTransitionManager.Instance.TransitionToScene(15);
+       gifImage.SetActive(false);
+       dialogueBox.SetActive(true);
+       Debug.Log("HandleOption3Dialogue being called");
+       yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option3Dialogue, true));
+       yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
+      
+    // Load scene with index 15
+
+    SceneTransitionManager.Instance.TransitionToScene(15);
     }
+     */
 }

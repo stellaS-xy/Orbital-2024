@@ -1246,6 +1246,7 @@ MonoBehaviour:
   - 'Wont you come with me '
   choiceButtonGroup: {fileID: 22867434}
   optionDialogue: {fileID: 1389795344}
+  dialogueBox: {fileID: 1359981545}
 --- !u!114 &726497971
 MonoBehaviour:
   m_ObjectHideFlags: 0
