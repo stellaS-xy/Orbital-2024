@@ -37,7 +37,7 @@ public class EndingSceneController : MonoBehaviour
         yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
 
         // Transition to the next scene
-        SceneManager.LoadScene(0);
+        SceneTransitionManager.Instance.TransitionToScene(0);
     }
 
     private IEnumerator FadeInCG()

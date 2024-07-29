@@ -83,6 +83,6 @@ public class Ending3SceneController : MonoBehaviour
 
 
         // Load the next scene
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneTransitionManager.Instance.TransitionToScene(16);
     }
 }

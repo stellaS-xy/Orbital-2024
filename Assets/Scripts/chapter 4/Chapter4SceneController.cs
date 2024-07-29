@@ -18,6 +18,7 @@ public class Chapter4SceneController : MonoBehaviour
     public GameObject choiceButtonGroup;
 
     public GameObject optionDialogue;
+    public GameObject dialogueBox;
 
     private bool option1Selected = false;
     private bool option2Selected = false;
@@ -39,6 +40,7 @@ public class Chapter4SceneController : MonoBehaviour
         gifImage.SetActive(false);
         choiceButtonGroup.SetActive(false);
         optionDialogue.SetActive(false);
+        dialogueBox.SetActive(false);
 
         StartCoroutine(StartSceneSequence());
     }
@@ -152,13 +154,10 @@ public class Chapter4SceneController : MonoBehaviour
 
     private IEnumerator HandleOption3Dialogue()
     {
-        if (optionDialogue != null)
-        {
-            optionDialogue.SetActive(true);
-        }
+        gifImage.SetActive(true);
         Debug.Log("HandleOption3Dialogue being called");
-        yield return StartCoroutine(OptionDialogueManager.Instance.ShowDialogue(option3Dialogue));
-        yield return new WaitUntil(() => !OptionDialogueManager.Instance.IsDialogueBoxActive());
+        yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option3Dialogue, true));
+        yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
 
         // Load scene with index 15
         SceneTransitionManager.Instance.TransitionToScene(15);

@@ -232,6 +232,7 @@ ScriptedImporter:
     cells:
     - name: Outfit_32_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 17
@@ -240,6 +241,7 @@ ScriptedImporter:
       spriteId: 8f196f0b371254f6d8f0a8facb2e11f8
     - name: Outfit_32_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 17
@@ -248,6 +250,7 @@ ScriptedImporter:
       spriteId: 0a0639fc70d8f4750a82f4366e070a2f
     - name: Outfit_32_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 17
@@ -256,6 +259,7 @@ ScriptedImporter:
       spriteId: e60ff8b8c908b41fdb8a1b2639fa3b5d
     - name: Outfit_32_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 17
@@ -264,6 +268,7 @@ ScriptedImporter:
       spriteId: 223de525c4cbf46628c65262483403bb
     - name: Outfit_32_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 17

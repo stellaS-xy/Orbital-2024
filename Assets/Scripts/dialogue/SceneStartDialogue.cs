@@ -41,7 +41,7 @@ public class SceneStartDialogue : MonoBehaviour
         }
         else
         {
-            Debug.LogError("DialogueManager instance not found. Ensure you have a DialogueManager in the scene.");
+            Debug.Log("DialogueManager instance not found. Ensure you have a DialogueManager in the scene.");
         }
 
         if (gifPlayerObject != null)

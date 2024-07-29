@@ -27,7 +27,7 @@ public class Ending2SceneController : MonoBehaviour
     public float cgDuration = 5f; // Duration for the CG image to be displayed
     */
 
-    public int nextSceneIndex; // Index of the next scene to load
+  
 
     private void Start()
     {
@@ -74,7 +74,7 @@ public class Ending2SceneController : MonoBehaviour
 
 
         // Load the next scene
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneTransitionManager.Instance.TransitionToScene(0);
     }
 
     /*

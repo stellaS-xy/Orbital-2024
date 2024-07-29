@@ -54,7 +54,7 @@ public class Puzzle5Manager : MonoBehaviour
                 UpdateHintMessage("Congrats!");
                 PuzzleManager.Instance.SetPuzzleCompleted("Puzzle5");
                 // Scene switch back the main game after completing the puzzle
-                SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneTransitionManager.Instance.TransitionToScene(17);
             } 
             else
             {
