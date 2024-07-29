@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class ClueManager : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class ClueManager : MonoBehaviour
     public GameObject arrow;
 
     public GameObject toNextScene;
+
+    public string[] rabbitDialogue;
 
     private void Start()
     {
@@ -41,22 +45,7 @@ public class ClueManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        if (DialogueManager.Instance != null)
-        {
-            DialogueManager.Instance.OnDialogueEnded += OnRabbitDialogueEnded;
-        }
-    }
-
-    private void OnDisable()
-    {
-        if (DialogueManager.Instance != null)
-        {
-            DialogueManager.Instance.OnDialogueEnded -= OnRabbitDialogueEnded;
-        }
-    }
-
+  
 
     public void CollectClue(string clueName)
     {
@@ -82,20 +71,41 @@ public class ClueManager : MonoBehaviour
         Debug.Log("All clues collected!");
         // Trigger the next sequence of events
 
+        
+        directionCanvas.SetActive(false);
+        
+
+        PuzzleManager.Instance.SetPuzzleCompleted("Puzzle2");
+        SceneTransitionManager.Instance.TransitionToScene(7);
+
+        /*
         rabbitObject.SetActive(true);
         rabbit.showButton();
-        directionCanvas.SetActive(false);
         arrow.SetActive(true);
-        PuzzleManager.Instance.SetPuzzleCompleted("Puzzle2");
-        
-        
+        // Start the coroutine to handle the rabbit dialogue and scene transition
+        StartCoroutine(HandleRabbitDialogueAndTransition());
+        */
     }
 
-
-    private void OnRabbitDialogueEnded()
+    private IEnumerator HandleRabbitDialogueAndTransition()
     {
-        toNextScene.SetActive(true);
+        if (rabbitDialogue != null && rabbitDialogue.Length > 0)
+        {
+            // Show the rabbit dialogue
+            yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(rabbitDialogue, false));
 
+            // Wait for the dialogue to finish
+            yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
+        }
+        else
+        {
+            Debug.LogWarning("Rabbit dialogue is null or empty!");
+        }
+        // Transition to the next scene
+        SceneTransitionManager.Instance.TransitionToScene(7);
     }
+
+
+
 
 }
