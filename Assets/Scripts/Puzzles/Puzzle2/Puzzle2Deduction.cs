@@ -11,7 +11,8 @@ public class Puzzle2Deduction : MonoBehaviour
     public Button option1Button;
     public Button option2Button;
     public Button option3Button;
-    //private SceneLoader sceneLoader;
+
+    public ChapterCompletionHandler chapterCompletionHandler;
 
     private void Start()
     {
@@ -34,7 +35,8 @@ public class Puzzle2Deduction : MonoBehaviour
                 break;
             case 3:
                 DisplayDialogue("Yes, it's Rexa! Why is he breaking into my house? Nothing has been stolen, and he usually doesn't act this way! Even if it was him, why was Finn's fur left in the fridge?");
-                SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
+                chapterCompletionHandler.CompleteChapter();
+                SceneTransitionManager.Instance.TransitionToScene(8);
                 break;
         }
     }

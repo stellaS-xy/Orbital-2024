@@ -22,6 +22,7 @@ public class Chapter4SceneController : MonoBehaviour
 
     private bool option1Selected = false;
     private bool option2Selected = false;
+    public ChapterCompletionHandler chapterCompletionHandler;
 
     private void Awake()
     {
@@ -119,6 +120,16 @@ public class Chapter4SceneController : MonoBehaviour
         //StartCoroutine(HandleOption3Dialogue());
 
         SceneTransitionManager.Instance.TransitionToScene(15);
+
+        // Update Chapter Manager
+        if (chapterCompletionHandler != null)
+        {
+            chapterCompletionHandler.CompleteChapter();
+        }
+        else
+        {
+            Debug.LogWarning("ChapterCompletionHandler is not assigned. Skipping chapter completion.");
+        }
     }
 
     private IEnumerator HandleOption1Dialogue()

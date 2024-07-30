@@ -38,6 +38,7 @@ public class SceneController : MonoBehaviour
     
 
     public int nextSceneIndex;
+    public ChapterCompletionHandler chapterCompletionHandler;
 
    
 
@@ -197,15 +198,27 @@ public class SceneController : MonoBehaviour
 
         // Start the conversation with Rabbit
         yield return StartCoroutine(DialogueManager.Instance.ShowDialogue(option1SecondDialogue, false));
-        Debug.Log("Rabbit after dialogue starts to display");
+        //Debug.Log("Rabbit after dialogue starts to display");
 
         // Wait for rabbitAfterRexaDialogue to finish
         yield return new WaitUntil(() => !DialogueManager.Instance.IsDialogueBoxActive());
-        Debug.Log("Rabbit after dialogue is done");
+       //Debug.Log("Rabbit after dialogue is done");
 
 
         // Transition to the next scene in sequence
-        SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneTransitionManager.Instance.TransitionToScene(nextSceneIndex);
+        Debug.Log("load chapter 4");
+
+
+        // Update Chapter Manager
+        if (chapterCompletionHandler != null)
+        {
+            chapterCompletionHandler.CompleteChapter();
+        }
+        else
+        {
+            Debug.LogWarning("ChapterCompletionHandler is not assigned. Skipping chapter completion.");
+        }
            
     }
 

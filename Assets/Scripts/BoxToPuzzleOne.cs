@@ -16,6 +16,8 @@ public class BoxToPuzzleOne : MonoBehaviour
     public GameObject screenImage;
 
     public Animator animator;
+    public ChapterCompletionHandler chapterCompletionHandler;
+    public string nextSceneName;
 
     private void Start()
     {
@@ -57,7 +59,8 @@ public class BoxToPuzzleOne : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         // Use SceneTransitionManager to load the next scene
-        SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneTransitionManager.Instance.TransitionToScene(nextSceneName);
+        
     }
 
     private void Update()
@@ -66,6 +69,14 @@ public class BoxToPuzzleOne : MonoBehaviour
         {
             Debug.Log("On triggered to load next scene");
             StartCoroutine(LoadScene());
+            if (chapterCompletionHandler != null)
+            {
+                chapterCompletionHandler.CompleteChapter();
+            }
+            else
+            {
+                Debug.LogWarning("ChapterCompletionHandler is not assigned. Skipping chapter completion.");
+            }
         }
     }
 }

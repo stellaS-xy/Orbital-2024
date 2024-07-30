@@ -252,7 +252,6 @@ ScriptedImporter:
     cells:
     - name: Books_ase_Frame_0
       frameIndex: 0
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 404
@@ -261,7 +260,6 @@ ScriptedImporter:
       spriteId: 53f05523ca63f40b1b7002d4843f52da
     - name: Books_ase_Frame_1
       frameIndex: 1
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 404
@@ -270,7 +268,6 @@ ScriptedImporter:
       spriteId: f6cffc85858c3490da04e6b8b54d365b
     - name: Books_ase_Frame_2
       frameIndex: 2
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 404
@@ -279,7 +276,6 @@ ScriptedImporter:
       spriteId: 459a25301853f4dc3838ff457615fb95
     - name: Books_ase_Frame_3
       frameIndex: 3
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 404
@@ -288,7 +284,6 @@ ScriptedImporter:
       spriteId: f6b46e9fdb15f47019a905b92e141c17
     - name: Books_ase_Frame_4
       frameIndex: 4
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 404
@@ -297,7 +292,6 @@ ScriptedImporter:
       spriteId: c27eec57d99684c51be20a7a054edb27
     - name: Books_ase_Frame_5
       frameIndex: 5
-      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 404

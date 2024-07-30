@@ -377,6 +377,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457ee061396f84d8ea2a933a1e8725c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chapterNames:
+  - Chapter 0 - Home
+  - chapter 1-1
+  - chapter 2
+  - chapter 3
+  - chapter 4
+  - chapter 5
 --- !u!4 &2134102767
 Transform:
   m_ObjectHideFlags: 0

@@ -103,6 +103,6 @@ public class chapter5SceneController : MonoBehaviour
         gifPlayerObject2.SetActive(false);
         gifPlayerImage.SetActive(false);
 
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneTransitionManager.Instance.TransitionToScene(0);
     }
 }

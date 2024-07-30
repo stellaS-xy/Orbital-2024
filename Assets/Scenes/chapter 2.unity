@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1813,6 +1814,8 @@ MonoBehaviour:
   grid: {fileID: 116123466}
   screenImage: {fileID: 1931832774}
   animator: {fileID: 1365317101}
+  chapterCompletionHandler: {fileID: 0}
+  nextSceneName: Puzzle3
 --- !u!4 &1404064416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6948181090010161581, guid: 18f529b17e4d0445882f2b231f922497, type: 3}

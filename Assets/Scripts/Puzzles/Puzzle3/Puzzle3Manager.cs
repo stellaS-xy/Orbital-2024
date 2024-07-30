@@ -12,6 +12,7 @@ public class Puzzle3Manager : MonoBehaviour
     private int emptyLocation;
     private int size;
     private bool shuffling = false;
+    public ChapterCompletionHandler chapterCompletionHandler;
     
     // Create the game setup with size x size pieces
     private void CreateGamePieces(float gapThickness){
@@ -81,7 +82,16 @@ public class Puzzle3Manager : MonoBehaviour
                 shuffling = true;
                 PuzzleManager.Instance.SetPuzzleCompleted("Puzzle3");
                 // Scene switch back the main game after completing the puzzle
-                SceneTransitionManager.Instance.TransitionToScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneTransitionManager.Instance.TransitionToScene("chapter 3");
+                // Update chapter manager
+                if (chapterCompletionHandler != null)
+                {
+                    chapterCompletionHandler.CompleteChapter();
+                }
+                else
+                {
+                    Debug.LogWarning("ChapterCompletionHandler is not assigned. Skipping chapter completion.");
+                }
             }
         }
 

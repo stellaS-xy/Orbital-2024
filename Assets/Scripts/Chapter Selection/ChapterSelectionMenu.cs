@@ -9,6 +9,12 @@ public class ChapterSelectionMenu : MonoBehaviour
 
     private void Start()
     {
+        if (chapterButtons.Length != chapterNames.Length || chapterNames.Length != chapterLabels.Length)
+        {
+            Debug.LogError("Chapter buttons, names, and labels must be of the same length.");
+            return;
+        }
+
         UpdateButtonInteractability();
         DisplayLastVisitedLabel();
     }
@@ -18,7 +24,7 @@ public class ChapterSelectionMenu : MonoBehaviour
         for (int i = 0; i < chapterButtons.Length; i++)
         {
             string chapterName = chapterNames[i];
-            if (i == 0 || ChapterManager.Instance.IsChapterStarted(chapterNames[i - 1]))
+            if (i == 0 || ChapterManager.Instance.IsChapterStarted(chapterName))
             {
                 chapterButtons[i].interactable = true;
                 int index = i; // Capture the current index in a local variable for the lambda
