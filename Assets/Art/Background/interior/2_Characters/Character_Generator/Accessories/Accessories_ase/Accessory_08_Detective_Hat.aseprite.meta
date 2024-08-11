@@ -192,6 +192,7 @@ ScriptedImporter:
     cells:
     - name: Accessory_08_Detective_Hat_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -200,6 +201,7 @@ ScriptedImporter:
       spriteId: beb695780c3b14a15980bc80d4eb387d
     - name: Accessory_08_Detective_Hat_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -208,6 +210,7 @@ ScriptedImporter:
       spriteId: 786d091c778e94e80905c9c5815de1c3
     - name: Accessory_08_Detective_Hat_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27

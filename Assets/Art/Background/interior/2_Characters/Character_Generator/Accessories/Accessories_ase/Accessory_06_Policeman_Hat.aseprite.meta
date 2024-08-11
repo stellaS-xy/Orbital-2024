@@ -252,6 +252,7 @@ ScriptedImporter:
     cells:
     - name: Accessory_06_Policeman_Hat_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -260,6 +261,7 @@ ScriptedImporter:
       spriteId: 82eae7102f8a6420bbdf94681989008a
     - name: Accessory_06_Policeman_Hat_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -268,6 +270,7 @@ ScriptedImporter:
       spriteId: de83ad6e05bfb496c88ce0bff96a5a7d
     - name: Accessory_06_Policeman_Hat_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 27
@@ -276,6 +279,7 @@ ScriptedImporter:
       spriteId: 6624c48a5a12d441cb2dfff26c9205d2
     - name: Accessory_06_Policeman_Hat_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 25
@@ -284,6 +288,7 @@ ScriptedImporter:
       spriteId: c1ed58b0352f3490a9dcc3bb18426197
     - name: Accessory_06_Policeman_Hat_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 25
@@ -292,6 +297,7 @@ ScriptedImporter:
       spriteId: 8153c2f1a6ddd4144a8662293d6eb50e
     - name: Accessory_06_Policeman_Hat_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 25
